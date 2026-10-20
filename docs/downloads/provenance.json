@@ -1,0 +1,38 @@
+{
+  "version": "protein-atlas-web-20261020-v1",
+  "snapshot": "2026-10-20",
+  "universe": 716,
+  "new": 497,
+  "rejected": 219,
+  "scientificScope": 9903,
+  "ppiEdges": 12049,
+  "ppiDirected": 12171,
+  "zeroPPI": 129,
+  "molecularCandidates": 716,
+  "molecularPairs": 5111,
+  "molecularMissing": 0,
+  "familyDetailGroups": 81,
+  "stateMeaning": {
+    "new": "在用户最新497名单中，不代表新功能",
+    "rejected": "原716中未被最新表保留，未提供逐基因原因，不是生物学阴性"
+  },
+  "PPIcoverage": "all observed protein-only associations incident to716 candidates within the fixed9903-gene network",
+  "molecularCoverage": "all5111 qualified known-function reference pairs from354 candidates; all716 audit rows retained",
+  "sourceVersions": [
+    "protein_only_PPI_release20261019",
+    "molecular_full20261020",
+    "Gene-PubMed20261020",
+    "balanced_priority20261020",
+    "family497_annotation20261020"
+  ],
+  "scoreIsProbability": false,
+  "annotationOrGraphChanged": false,
+  "sourceHashes": {
+    "outputs/candidate_annotations_20261019/candidate_pool716_annotated.tsv": "cf5dbc3466d64e521e7592c247a143ec303753b7fe8e4427dbfa7313fe9fb238",
+    "work/dark_family_annotation_20261020/reviewed_annotations.json": "9a98a558c438bded599969ee2bb86df7c78f23a74c516010baa977d1d1cf6a3d",
+    "outputs/molecular_full_20261020/molecular_core716_known_anchor_pairs.tsv": "a621e0d8f187291d40eca296d703c7c9d15c5507d243ec6a56a8a50bbe54ec11",
+    "work/protein_browser_20261020/browser716_evidence.json.gz": "5371b2e0bd4b341d2da7a329c2e00b9938684a8bb6f45bd6e0f6b967342f5c82",
+    "outputs/pubmed_counts_20261020/pubmed_counts.json": "a3ca5eecf364cfeaa8962ef1cc732818dd289208e6d67b30dbac9228ec2332d3",
+    "work/weighted_priority_20261020/workbook_default_rows.json": "93eeeaa77a4d1e17ab255cb9289fce00ce745046adc7c29af2d5ce09b8dec327"
+  }
+}

@@ -1,0 +1,49 @@
+.DS_Store
+.AppleDouble
+.Trashes
+
+# Local environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+coverage/
+
+# Credentials and local hosting identity
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.npmrc
+.openai/
+
+# Runtime logs, editor files and incomplete transfers
+*.log
+*.pid
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.part
+*.aria2
+agent_execution.lock
+
+# Project operations belong outside this website repository
+/work/
+/handoff/
+/inputs/
+/outputs/
+/resources/
+/incoming/
+
+# Intentionally tracked: docs/data/ and docs/downloads/ are required
+# by the published website, including its TSV and XLSX downloads.
