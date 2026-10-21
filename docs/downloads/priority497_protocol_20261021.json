@@ -1,0 +1,42 @@
+{
+  "schema": "new497_localization_epigenetic_priority_v1",
+  "created_utc": "2026-10-21T07:38:45.786114+00:00",
+  "scope": 497,
+  "user_accepted_weights": {
+    "localization": 25,
+    "epigenetic": 35,
+    "reliability": 20,
+    "opportunity": 15,
+    "tractability": 5
+  },
+  "role": "posthoc uncalibrated experiment-selection priority, not model evaluation",
+  "input_sha256": "c8c8528985f253e884442662df2c2802924212220f800630812065654e5f4a89",
+  "matrix_path": "/home/hujiatong/protein_atlas/model_v1/outputs/scope_v7_protein_PPI_view_20261019/B_PPI_full_reference.npz",
+  "matrix_scope": 9903,
+  "matrix_pairs": 481199,
+  "localization": "current HPA main/additional and gene-level reliability; caution/multigene hold; member-level UniProt/GO experiments retained; historical L never used as score",
+  "epigenetic_reference": "EpiFactors2.1 histone/chromatin/Polycomb/DNA categories plus histones; HGNC+canonical accession exact match, RNA-only/generic TF excluded",
+  "epigenetic_formula": "0.6*min(1,specificity_weighted_core/(weighted_all+3)/0.35)+0.25*min(1,log1p(weighted_core)/log(5))+0.15*min(1,core_programme_count/3)",
+  "hub_weight": "sqrt(50/(50+partner_degree_in_current9903_graph)); broad-context reference .25, dedicated reference1; primary queue requires dedicated hit",
+  "reliability_formula": ".6*mean(top3 relation-class weights)+.3*min(1,programme_proxies/3)+.1*any_explicit_context; use core edges when any, otherwise all reported edges; shared identity capped .5",
+  "study_caveat": "programme proxies, not independent replication counts; same source duplicates never add votes",
+  "mechanistic_opportunity": "own member mechanism=.15; high-coverage compatible-architecture near relative with experimental function=.25; otherwise unassessed null displayed .5 with 0-1 bounds; no PubMed-count or empty-FUNCTION reward",
+  "tractability": "min(1,length/100,1000/length); five points maximum; no hard exclusion",
+  "unknowns": "null+mask, neutral .5 for display, score bounds not CI; zero observed chromatin hits means zero evidence support, not functional negative",
+  "queue_priority": [
+    "A_strict_nuclear_chromatin",
+    "B_known_mechanism_review",
+    "C_context_nuclear_review",
+    "D_nuclear_no_chromatin_link",
+    "E_identity_hold",
+    "F_insufficient_evidence",
+    "G_non_nuclear_context"
+  ],
+  "redundancy": "representative-centred direct stars, sequence identity>=.5 and BOTH coverages>=.8, ordered exact Pfam architecture (or identity>=.9); exact-sequence dependencies always grouped; structural evidence displayed when available, not invented; provisional redundancy, not proven equal functions",
+  "old716_preserved": true,
+  "no_expanded_candidate_pool": true,
+  "max_runtime_seconds": 600,
+  "graph_training_or_new_embedding": false,
+  "no_human_IF_review_claim": true,
+  "epigenetic_annotations_used_for_ranking_not_independent_validation": true
+}

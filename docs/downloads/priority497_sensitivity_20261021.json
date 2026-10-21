@@ -1,0 +1,320 @@
+{
+  "scenarios": [
+    {
+      "scenario": "default",
+      "weights": {
+        "localization": 25,
+        "epigenetic": 35,
+        "reliability": 20,
+        "opportunity": 15,
+        "tractability": 5
+      },
+      "top20": [
+        "LRRC42",
+        "CRYBG2",
+        "PNMA8A",
+        "PHLDB3",
+        "EFCAB5",
+        "ZDBF2",
+        "NOAZFP",
+        "LONRF3",
+        "KIAA0408",
+        "TIGD2",
+        "MSANTD3",
+        "THAP8",
+        "CIMIP6",
+        "MAB21L3",
+        "PRR3",
+        "FLYWCH2",
+        "ZSWIM9",
+        "EFCAB12",
+        "R3HDM2",
+        "JRKL"
+      ],
+      "overlap_with_default20": 20,
+      "denominator_primary_queue": 83
+    },
+    {
+      "scenario": "loc_emphasis",
+      "weights": {
+        "localization": 35,
+        "epigenetic": 30,
+        "reliability": 20,
+        "opportunity": 10,
+        "tractability": 5
+      },
+      "top20": [
+        "LRRC42",
+        "PNMA8A",
+        "CRYBG2",
+        "PHLDB3",
+        "NOAZFP",
+        "THAP8",
+        "EFCAB5",
+        "ZDBF2",
+        "LONRF3",
+        "KIAA0408",
+        "MSANTD3",
+        "TIGD2",
+        "CIMIP6",
+        "MAB21L3",
+        "PRR3",
+        "R3HDM2",
+        "FLYWCH2",
+        "ZSWIM9",
+        "FAM131B",
+        "SH3BGRL2"
+      ],
+      "overlap_with_default20": 18,
+      "denominator_primary_queue": 83
+    },
+    {
+      "scenario": "chromatin_emphasis",
+      "weights": {
+        "localization": 20,
+        "epigenetic": 45,
+        "reliability": 20,
+        "opportunity": 10,
+        "tractability": 5
+      },
+      "top20": [
+        "CRYBG2",
+        "LRRC42",
+        "PHLDB3",
+        "PNMA8A",
+        "EFCAB5",
+        "ZDBF2",
+        "NOAZFP",
+        "LONRF3",
+        "TIGD2",
+        "KIAA0408",
+        "MSANTD3",
+        "CIMIP6",
+        "MAB21L3",
+        "THAP8",
+        "PRR3",
+        "FLYWCH2",
+        "ZSWIM9",
+        "EFCAB12",
+        "JRKL",
+        "TIGD6"
+      ],
+      "overlap_with_default20": 19,
+      "denominator_primary_queue": 83
+    },
+    {
+      "scenario": "no_length",
+      "weights": {
+        "localization": 25,
+        "epigenetic": 40,
+        "reliability": 20,
+        "opportunity": 15,
+        "tractability": 0
+      },
+      "top20": [
+        "CRYBG2",
+        "LRRC42",
+        "ZDBF2",
+        "PNMA8A",
+        "EFCAB5",
+        "PHLDB3",
+        "NOAZFP",
+        "LONRF3",
+        "KIAA0408",
+        "TIGD2",
+        "MSANTD3",
+        "CIMIP6",
+        "THAP8",
+        "MAB21L3",
+        "PRR3",
+        "FLYWCH2",
+        "ZSWIM9",
+        "EFCAB12",
+        "JRKL",
+        "TIGD6"
+      ],
+      "overlap_with_default20": 19,
+      "denominator_primary_queue": 83
+    },
+    {
+      "scenario": "reliability_emphasis",
+      "weights": {
+        "localization": 25,
+        "epigenetic": 30,
+        "reliability": 30,
+        "opportunity": 10,
+        "tractability": 5
+      },
+      "top20": [
+        "LRRC42",
+        "CRYBG2",
+        "PNMA8A",
+        "PHLDB3",
+        "EFCAB5",
+        "ZDBF2",
+        "KIAA0408",
+        "LONRF3",
+        "THAP8",
+        "MSANTD3",
+        "TIGD2",
+        "PRR3",
+        "FLYWCH2",
+        "NOAZFP",
+        "MAB21L3",
+        "ZSWIM9",
+        "CIMIP6",
+        "R3HDM2",
+        "RSRC2",
+        "TCEANC2"
+      ],
+      "overlap_with_default20": 18,
+      "denominator_primary_queue": 83
+    },
+    {
+      "scenario": "unassessed_components_0",
+      "top20": [
+        "LRRC42",
+        "CRYBG2",
+        "PNMA8A",
+        "PHLDB3",
+        "EFCAB5",
+        "ZDBF2",
+        "NOAZFP",
+        "LONRF3",
+        "KIAA0408",
+        "TIGD2",
+        "MSANTD3",
+        "THAP8",
+        "CIMIP6",
+        "MAB21L3",
+        "PRR3",
+        "FLYWCH2",
+        "ZSWIM9",
+        "EFCAB12",
+        "R3HDM2",
+        "JRKL"
+      ],
+      "overlap_with_default20": 20,
+      "note": "missingness scenario bound; not statistical confidence"
+    },
+    {
+      "scenario": "unassessed_components_1",
+      "top20": [
+        "LRRC42",
+        "CRYBG2",
+        "PNMA8A",
+        "PHLDB3",
+        "EFCAB5",
+        "ZDBF2",
+        "NOAZFP",
+        "LONRF3",
+        "KIAA0408",
+        "TIGD2",
+        "MSANTD3",
+        "THAP8",
+        "CIMIP6",
+        "MAB21L3",
+        "PRR3",
+        "FLYWCH2",
+        "ZSWIM9",
+        "EFCAB12",
+        "R3HDM2",
+        "JRKL"
+      ],
+      "overlap_with_default20": 20,
+      "note": "missingness scenario bound; not statistical confidence"
+    }
+  ],
+  "redundancy_thresholds": [
+    {
+      "identity": 0.4,
+      "bilateral_coverage": 0.7,
+      "multi_member_groups": 26,
+      "representatives": 431
+    },
+    {
+      "identity": 0.5,
+      "bilateral_coverage": 0.8,
+      "multi_member_groups": 24,
+      "representatives": 435
+    },
+    {
+      "identity": 0.6,
+      "bilateral_coverage": 0.9,
+      "multi_member_groups": 21,
+      "representatives": 438
+    }
+  ],
+  "bias_strata": [
+    {
+      "axis": "length",
+      "stratum": "100-1000",
+      "n": 434,
+      "median_raw_score": 46.2520865,
+      "primary_queue": 70
+    },
+    {
+      "axis": "length",
+      "stratum": "<100",
+      "n": 20,
+      "median_raw_score": 47.375,
+      "primary_queue": 0
+    },
+    {
+      "axis": "length",
+      "stratum": ">1000",
+      "n": 43,
+      "median_raw_score": 44.737837,
+      "primary_queue": 13
+    },
+    {
+      "axis": "observed_PPI_degree",
+      "stratum": "0",
+      "n": 80,
+      "median_raw_score": 52.5,
+      "primary_queue": 0
+    },
+    {
+      "axis": "observed_PPI_degree",
+      "stratum": "1-5",
+      "n": 173,
+      "median_raw_score": 39.4394,
+      "primary_queue": 16
+    },
+    {
+      "axis": "observed_PPI_degree",
+      "stratum": "6-20",
+      "n": 147,
+      "median_raw_score": 44.965425,
+      "primary_queue": 33
+    },
+    {
+      "axis": "observed_PPI_degree",
+      "stratum": ">20",
+      "n": 97,
+      "median_raw_score": 53.628301,
+      "primary_queue": 34
+    },
+    {
+      "axis": "gene_pubmed",
+      "stratum": "0-5",
+      "n": 110,
+      "median_raw_score": 51.675,
+      "primary_queue": 3
+    },
+    {
+      "axis": "gene_pubmed",
+      "stratum": "6-20",
+      "n": 315,
+      "median_raw_score": 43.934812,
+      "primary_queue": 55
+    },
+    {
+      "axis": "gene_pubmed",
+      "stratum": ">20",
+      "n": 72,
+      "median_raw_score": 52.6903245,
+      "primary_queue": 25
+    }
+  ]
+}

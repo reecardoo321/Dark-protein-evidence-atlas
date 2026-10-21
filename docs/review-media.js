@@ -13,7 +13,7 @@
   return (await memo.get(f.key))[symbol];
  }
  function reviewBanner(){
-  return `<div class="scope-note warn"><strong>定位正在复审，旧优先分尚未修订。</strong>原表tier、历史L1–L3与“是否主要位于核内”不是同一概念。新图像来自HPA官方原始记录，尚未逐图人工判定。<a href="review.html">打开716蛋白定位复审总表 →</a></div>`;
+  return `<div class="scope-note warn"><strong>定位来源已复审，new497重排已另列。</strong>原表tier、历史L1–L3与“是否主要位于核内”不是同一概念。新图像来自HPA官方原始记录，尚未逐图人工判定。<a href="review.html">打开716蛋白定位复审总表 →</a></div>`;
  }
  async function detail(symbol){
   const r=await get(symbol),h=r.hpa,models=r.structures,images=h.images;
