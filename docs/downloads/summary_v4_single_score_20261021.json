@@ -1,0 +1,129 @@
+{
+ "schema": "priority497_v4_single_score_dryrun_1",
+ "generated_at": "2026-10-21",
+ "input_sha256": "c8c8528985f253e884442662df2c2802924212220f800630812065654e5f4a89",
+ "weights": {
+  "localization": 25,
+  "epigenetic": 35,
+  "reliability": 20,
+  "opportunity": 15,
+  "tractability": 5
+ },
+ "p0": 0.0872,
+ "genes": 497,
+ "role": "single priority total; no A/B/C/D or A1/A2",
+ "top20": [
+  {
+   "symbol": "CRYBG2",
+   "score": 79.103,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "LRRC42",
+   "score": 76.607,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "C8orf74",
+   "score": 76.326,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "C9orf85",
+   "score": 72.749,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "EFCAB5",
+   "score": 68.5,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "TIGD2",
+   "score": 67.08,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "ZDBF2",
+   "score": 66.966,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "MSANTD3",
+   "score": 66.397,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "EFCAB12",
+   "score": 66.06,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "MAB21L3",
+   "score": 65.595,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "ZSWIM9",
+   "score": 65.374,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "THAP8",
+   "score": 64.567,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "TMEM35B",
+   "score": 64.338,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "PNMA8A",
+   "score": 63.846,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "LONRF3",
+   "score": 63.703,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "KIAA0408",
+   "score": 63.326,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "CIMIP6",
+   "score": 63.282,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "RIPOR3",
+   "score": 62.974,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "NOAZFP",
+   "score": 62.624,
+   "coverage": 1.0
+  },
+  {
+   "symbol": "PHLDB3",
+   "score": 61.839,
+   "coverage": 1.0
+  }
+ ],
+ "correlations": {
+  "v3_epigenetic_vs_PPI": 0.564,
+  "v4_chromatin_vs_PPI": 0.038,
+  "v3_epigenetic_vs_purity": 0.891,
+  "v4_chromatin_vs_purity": 0.86
+ },
+ "coverage": {
+  "assessed_ge_60": 417,
+  "assessed_lt_60": 80
+ },
+ "v3_replaced": false,
+ "remote_manifest_updated": false
+}

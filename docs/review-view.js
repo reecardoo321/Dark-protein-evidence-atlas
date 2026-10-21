@@ -8,12 +8,12 @@
  let opts={onOpenGene:function(){},onToast:function(){},onChange:function(){}};
  let filter='unreviewed',scope='subset',index=0,autoNext=true,sort='priority';
  const FILTERS=[['unreviewed','未逐项确认'],['acceptReviewed','已确认接受'],['reject','已拒绝'],['pending','待定'],['all497','全部497'],['not_in_subset','219未纳入'],['all716','全部716']];
- const QORDER=Object.keys(PUI.queues).reduce(function(m,k,i){m[k]=i;return m},{});
  function cmpPriority(a,b){
   const ra=PUI.get(a.symbol),rb=PUI.get(b.symbol);
   if(!ra&&!rb)return a.originalOrder-b.originalOrder;
   if(!ra)return 1;if(!rb)return -1;
-  return (QORDER[ra.queue]-QORDER[rb.queue])||((rb.score==null?-1:rb.score)-(ra.score==null?-1:ra.score))||(a.originalOrder-b.originalOrder);
+  const sa=PUI.score(a.symbol),sb=PUI.score(b.symbol);
+  return ((sb==null?-1:sb)-(sa==null?-1:sa))||(a.originalOrder-b.originalOrder);
  }
  function rows(){
   let list=RS.list(scope,filter);
@@ -52,7 +52,7 @@
  function tabsHTML(){
   const s=cSub(),a=cAll();
   const count={unreviewed:s.unreviewed,acceptReviewed:s.acceptReviewed,reject:s.reject,pending:s.pending,all497:s.total,not_in_subset:a.not_in_subset,all716:a.total};
-  return '<div class="review-tabs" role="group" aria-label="审查队列">'+FILTERS.map(function(pair){
+  return '<div class="review-tabs" role="group" aria-label="审查筛选">'+FILTERS.map(function(pair){
    const key=pair[0],name=pair[1];
    const active=(key==='all716')?(scope==='all'&&filter==='all'):(key==='all497'?(scope==='subset'&&filter==='all'):(key==='not_in_subset'?(scope==='outside'&&filter==='not_in_subset'):(scope==='subset'&&filter===key)));
    return '<button class="review-tab '+(active?'active':'')+'" data-review-action="tab" data-review-value="'+E(key)+'">'+E(name)+' <b>'+count[key]+'</b></button>';
@@ -61,7 +61,6 @@
  function card(g){
   const r=PUI.get(g.symbol),loc=reviewRows.get(g.symbol)||{},d=RS.get(g.symbol);
   const score=r?PUI.score(g.symbol):null;
-  const queue=r?PUI.queues[r.queue]:'本轮未重排';
   const partners=(r&&r.chromatin_partners)||[];
   const flags=(r&&r.flags)||[];
   const note=d.note||'';
@@ -72,7 +71,7 @@
     '<h2 class="review-symbol">'+E(g.symbol)+'</h2>'+
     '<div class="review-meta">'+membershipBadge(g)+(d.status==='not_in_subset'?'':statusPill(d))+'<span class="pill info">'+E(g.shared>1?'共享序列':'单一身份')+'</span></div>'+
     '<p class="review-name">'+E(g.name||'未提供蛋白名')+' · '+E(g.family||'未分组')+' · '+E(g.hgnc)+'</p></div>'+
-    '<div class="review-score-box"><strong>'+(g.status==='new'?(score==null?'—':Number(score).toFixed(2)):'—')+'</strong><span>'+(g.status==='new'?'当前 v3 优先分 · 非概率':'不在497重排范围')+'</span><small>'+E(g.status==='new'?queue:'219未纳入 · 仍可人工接受/拒绝')+'</small></div>'+
+    '<div class="review-score-box"><strong>'+(g.status==='new'?(score==null?'—':Number(score).toFixed(2)):'—')+'</strong><span>'+(g.status==='new'?'优先度总分 · 非概率':'不在497重排范围')+'</span><small>'+(g.status==='new'?'按总分排序；无A/B/C/D分层':'219未纳入 · 仍可人工接受/拒绝')+'</small></div>'+
    '</div>'+
    '<div class="review-grid">'+
     '<section class="review-section"><h4>定位与图像</h4><p>HPA 主定位：<b>'+E(loc.HPA_main||'未提供')+'</b><br>附加：'+E(loc.HPA_additional||'未提供')+'<br>基因级可靠性：'+E(loc.HPA_current_reliability||'未提供')+' · IF '+Number(loc.IF_images||0)+' 张</p><p class="ref-label">历史 '+E(g.loc)+' 与旧 tier 只作来源对照，不是核定位概率。</p></section>'+
@@ -96,7 +95,7 @@
  function toolbarHTML(){
   return '<div class="review-toolbar"><div>'+tabsHTML()+'</div><div class="review-toolbar-right">'+
    '<span class="review-sort-label">排序</span>'+
-   '<button class="review-tab '+(sort==='priority'?'active':'')+'" data-review-action="sort" data-review-value="priority">新优先分</button>'+
+   '<button class="review-tab '+(sort==='priority'?'active':'')+'" data-review-action="sort" data-review-value="priority">优先度总分</button>'+
    '<button class="review-tab '+(sort==='original'?'active':'')+'" data-review-action="sort" data-review-value="original">原716顺序</button>'+
    '<label class="review-auto"><input type="checkbox" id="review-auto" '+(autoNext?'checked':'')+'> 决定后自动下一个</label>'+
    '<button class="button" data-review-export="1">↓ 导出JSON</button><button class="button" data-review-export-csv="1">↓ CSV</button><button class="button" data-review-import="1">↑ 导入</button>'+
