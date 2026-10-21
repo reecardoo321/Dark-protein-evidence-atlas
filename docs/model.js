@@ -3,11 +3,11 @@
  const norm=x=>String(x??'').toLowerCase().trim();
  const numeric=x=>x===null||x===undefined||x===''?null:Number.isFinite(Number(x))?Number(x):null;
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const locationNames={L1:'L1 强来源支持',L2:'L2 较低特异性支持',L3:'L3 提示性支持',L0:'L0 未解决'};
+ const locationNames={L1:'L1 历史强来源支持',L2:'L2 历史较低特异性支持',L3:'L3 历史提示性支持',L0:'L0 未解决'};
  const route=g=>g.ppi>0&&g.molecular>0?'both':g.ppi>0?'ppi':g.molecular>0?'molecular':'none';
  const filterGenes=(genes,f={})=>{
   const qs=norm(f.q).split(/\s+/).filter(Boolean);
-  return genes.filter(g=>(!f.status||g.status===f.status)&&(!f.loc||g.loc===f.loc)&&(!f.family||g.family===f.family)&&(!f.route||route(g)===f.route)&&(!f.saved||f.saved.has(g.symbol))&&
+  return genes.filter(g=>(!f.reviewCat||g.reviewCat===f.reviewCat)&&(!f.status||g.status===f.status)&&(!f.loc||g.loc===f.loc)&&(!f.family||g.family===f.family)&&(!f.route||route(g)===f.route)&&(!f.saved||f.saved.has(g.symbol))&&
    (numeric(f.maxLength)===null||(numeric(g.length)!==null&&g.length<=Number(f.maxLength)))&&(!f.lab||g.labOverlap)&&qs.every(q=>norm(g.searchText).includes(q)));
  };
  const sortGenes=(rows,key='family',direction='asc')=>{

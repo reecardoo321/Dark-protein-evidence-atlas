@@ -4,8 +4,8 @@
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
  <meta name="description" content="716个人类候选蛋白的实验互作、分子亲缘与最新家族注释浏览器。">
  <title>Dark Protein Atlas · 候选证据浏览器</title>
- <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css">
- <script defer src="data/index.js"></script><script defer src="model.js"></script><script defer src="app.js"></script>
+ <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css">
+ <script defer src="data/index.js"></script><script defer src="model.js"></script><script defer src="review-data/index.js"></script><script defer src="review-media.js"></script><script defer src="app.js"></script>
 </head>
 <body>
  <a class="skip-link" href="#main">跳到内容</a>
@@ -19,7 +19,7 @@
    <button class="nav-button" data-view="families"><span>家族与结构分组</span><span>81</span></button>
    <button class="nav-button" data-view="methods"><span>方法与数据来源</span><span>↗</span></button>
   </nav>
-  <div class="sidebar-section">用户审阅状态</div>
+  <a class="nav-button nav-review-link" href="review.html"><span>核定位复审 · IF / 结构</span><span>新</span></a><div class="sidebar-section">用户审阅状态</div>
   <div class="status-buttons" role="group" aria-label="审阅状态">
    <button class="status-button active" data-status=""><span>全部候选</span><b>716</b></button>
    <button class="status-button" data-status="new"><span><i class="status-dot new"></i>new · 最新保留</span><b>497</b></button>
@@ -39,17 +39,17 @@
     <button class="stat" data-stat="rejected"><span>用户移除 <i class="pill rejected">rejected</i></span><strong>219</strong><small>仍可查看和导出</small></button>
     <button class="stat" data-stat="molecular"><span>有合格分子参考</span><strong>354<span class="stat-unit"> / 716</span></strong><small>5,111 条已知参考配对</small></button>
    </section>
-   <section class="filter-panel" id="filters" aria-label="数据筛选">
+   <div class="review-notice scope-note warn">定位正在复审：L层是历史来源规则，不是核定位概率。原表tier、当前HPA主/附加定位、IF图和三维结构已补充；旧分数尚未重排。<a href="review.html">进入完整复审 →</a></div><section class="filter-panel" id="filters" aria-label="数据筛选">
     <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="搜索蛋白、别名、伙伴或功能" placeholder="搜索基因、别名、UniProt、互作伙伴或功能关键词…"><kbd>/</kbd></div>
     <div class="filter-row">
-     <label>定位证据<select id="loc-filter"><option value="">全部层级</option><option value="L1">L1 · 强来源支持</option><option value="L2">L2 · 较低特异性支持</option><option value="L3">L3 · 提示性支持</option><option value="L0">L0 · 未解决</option></select></label>
-     <label>家族 / 结构分组<select id="family-filter"><option value="">全部分组</option></select></label>
+     <label>历史来源层<select id="loc-filter"><option value="">全部层级</option><option value="L1">L1 · 强来源支持</option><option value="L2">L2 · 较低特异性支持</option><option value="L3">L3 · 提示性支持</option><option value="L0">L0 · 未解决</option></select></label>
+     <label>当前HPA定位<select id="review-category-filter"><option value="">全部（待人工审图）</option><option value="nuclear_main_only">核相关主定位，无其他主定位</option><option value="mixed_main">核与非核混合主定位</option><option value="nuclear_additional">核仅为附加定位</option><option value="non_nuclear_IF">IF未标注核定位</option><option value="no_IF_annotation">当前无IF定位注释</option></select></label><label>家族 / 结构分组<select id="family-filter"><option value="">全部分组</option></select></label>
      <label>证据路线<select id="route-filter"><option value="">全部路线</option><option value="both">实验互作 + 分子亲缘</option><option value="ppi">仅观察到实验互作</option><option value="molecular">仅有合格分子参考</option><option value="none">未观察到上述两类支持</option></select></label>
      <label>长度上限 (aa)<input id="length-filter" type="number" min="1" placeholder="不限"></label>
      <label class="check-label"><input type="checkbox" id="lab-filter">实验室名单重叠</label><button id="reset" class="text-button">清除筛选</button>
     </div>
    </section>
-   <section class="results-panel"><div class="results-top"><div><strong id="results-count" aria-live="polite">正在载入…</strong><span id="results-note"></span></div><label id="sort-label">排序<select id="sort"><option value="family:asc">家族 / 基因</option><option value="original:asc">原716名单顺序</option><option value="symbol:asc">基因 A–Z</option><option value="ppi:desc">互作伙伴数 ↓</option><option value="molecular:desc">分子参考数 ↓</option><option value="pubmed:asc">Gene关联论文数 ↑</option><option value="length:asc">蛋白长度 ↑</option><option value="score:desc">默认综合优先分 ↓</option></select></label></div>
+   <section class="results-panel"><div class="results-top"><div><strong id="results-count" aria-live="polite">正在载入…</strong><span id="results-note"></span></div><label id="sort-label">排序<select id="sort"><option value="family:asc">家族 / 基因</option><option value="original:asc">原716名单顺序</option><option value="symbol:asc">基因 A–Z</option><option value="ppi:desc">互作伙伴数 ↓</option><option value="molecular:desc">分子参考数 ↓</option><option value="pubmed:asc">Gene关联论文数 ↑</option><option value="length:asc">蛋白长度 ↑</option><option value="score:desc">历史综合优先分 ↓（待修订）</option></select></label></div>
     <div id="view-content" aria-live="polite"><div class="loading">正在载入证据快照…</div></div>
     <div id="pagination" class="pagination"></div>
    </section>
