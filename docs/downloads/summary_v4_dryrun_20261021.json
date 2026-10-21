@@ -1,0 +1,456 @@
+{
+  "schema": "priority497_v4_dryrun_1",
+  "generated_at": "2026-10-21",
+  "input_sha256": "c8c8528985f253e884442662df2c2802924212220f800630812065654e5f4a89",
+  "weights": {
+    "localization": 25,
+    "epigenetic": 35,
+    "reliability": 20,
+    "opportunity": 15,
+    "tractability": 5
+  },
+  "p0": 0.0872,
+  "counts": {
+    "genes": 497,
+    "A_v3": 82,
+    "A1": 19,
+    "A2": 63,
+    "A_total": 82,
+    "v4_queue_counts": {
+      "A1_strict_chromatin_specific": 20,
+      "A2_nuclear_low_specificity": 67,
+      "B_known_mechanism_review": 7,
+      "C_context_nuclear_review": 120,
+      "D_nuclear_no_chromatin_link": 87,
+      "E_identity_hold": 25,
+      "F_insufficient_evidence": 171
+    }
+  },
+  "correlations": {
+    "v3_epigenetic_vs_PPI": 0.564,
+    "v4_chromatin_vs_PPI": 0.038,
+    "v3_epigenetic_vs_purity": 0.891,
+    "v4_chromatin_vs_purity": 0.86
+  },
+  "top20_v3": [
+    "LRRC42",
+    "CRYBG2",
+    "PNMA8A",
+    "PHLDB3",
+    "EFCAB5",
+    "ZDBF2",
+    "NOAZFP",
+    "KIAA0408",
+    "TIGD2",
+    "MSANTD3",
+    "THAP8",
+    "CIMIP6",
+    "MAB21L3",
+    "PRR3",
+    "FLYWCH2",
+    "ZSWIM9",
+    "EFCAB12",
+    "R3HDM2",
+    "JRKL",
+    "TCEANC2"
+  ],
+  "top20_v4_A": [
+    "CRYBG2",
+    "LRRC42",
+    "EFCAB5",
+    "TIGD2",
+    "ZDBF2",
+    "MSANTD3",
+    "EFCAB12",
+    "MAB21L3",
+    "ZSWIM9",
+    "THAP8",
+    "TMEM35B",
+    "PNMA8A",
+    "KIAA0408",
+    "CIMIP6",
+    "RIPOR3",
+    "NOAZFP",
+    "PHLDB3",
+    "SH3BGRL2",
+    "TSTD2",
+    "PRELID2"
+  ],
+  "top20_overlap": 15,
+  "A1": [
+    {
+      "symbol": "CRYBG2",
+      "v4_score": 79.1032,
+      "purity": 0.3365,
+      "chrom": 0.7038,
+      "partners": [
+        "PARP1",
+        "PARP2",
+        "EZH2",
+        "MGA",
+        "KAT14",
+        "L3MBTL2",
+        "MBIP",
+        "PCGF6",
+        "SATB2",
+        "ZZZ3",
+        "YEATS2"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "LRRC42",
+      "v4_score": 76.607,
+      "purity": 0.3466,
+      "chrom": 0.5608,
+      "partners": [
+        "PARP2",
+        "EYA4",
+        "KAT5",
+        "RAG2",
+        "USP7"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "EFCAB5",
+      "v4_score": 68.5002,
+      "purity": 0.4334,
+      "chrom": 0.61,
+      "partners": [
+        "PARP1",
+        "PARP3",
+        "H1-5",
+        "USP7",
+        "WDR5",
+        "SETD3"
+      ],
+      "loc": 0.7225
+    },
+    {
+      "symbol": "TIGD2",
+      "v4_score": 67.08,
+      "purity": 0.3756,
+      "chrom": 0.5026,
+      "partners": [
+        "PARP3",
+        "EP300",
+        "H4C1",
+        "SMARCA4",
+        "SMARCB1"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "ZDBF2",
+      "v4_score": 66.966,
+      "purity": 0.2085,
+      "chrom": 0.454,
+      "partners": [
+        "CTBP1",
+        "H1-5",
+        "HDAC1",
+        "MSH6",
+        "SET",
+        "TAF12",
+        "SIRT6",
+        "RCOR1",
+        "SETD3",
+        "PHF21A",
+        "NIPBL",
+        "KDM1A"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "MSANTD3",
+      "v4_score": 66.397,
+      "purity": 0.2446,
+      "chrom": 0.4218,
+      "partners": [
+        "BUB1",
+        "H3-3A",
+        "H4C1",
+        "SUV39H1",
+        "TP53BP1"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "EFCAB12",
+      "v4_score": 66.06,
+      "purity": 0.566,
+      "chrom": 0.4874,
+      "partners": [
+        "H1-2",
+        "H1-4",
+        "H1-5"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "MAB21L3",
+      "v4_score": 65.595,
+      "purity": 0.1575,
+      "chrom": 0.3156,
+      "partners": [
+        "PHC2",
+        "SIRT1",
+        "CHD8",
+        "CHD7",
+        "CHD9",
+        "INO80E"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "THAP8",
+      "v4_score": 64.5665,
+      "purity": 0.1766,
+      "chrom": 0.2751,
+      "partners": [
+        "SETDB1",
+        "PRMT7"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "TMEM35B",
+      "v4_score": 64.3385,
+      "purity": 0.2246,
+      "chrom": 0.2903,
+      "partners": [
+        "H1-5",
+        "H2AC20",
+        "SETD3"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "CIMIP6",
+      "v4_score": 63.2815,
+      "purity": 0.3106,
+      "chrom": 0.5163,
+      "partners": [
+        "BABAM2",
+        "BRCC3",
+        "BABAM1",
+        "ABRAXAS2"
+      ],
+      "loc": 0.7
+    },
+    {
+      "symbol": "RIPOR3",
+      "v4_score": 62.9745,
+      "purity": 0.2974,
+      "chrom": 0.3771,
+      "partners": [
+        "PARP1",
+        "SCML4"
+      ],
+      "loc": 1
+    },
+    {
+      "symbol": "NOAZFP",
+      "v4_score": 62.6245,
+      "purity": 0.243,
+      "chrom": 0.5365,
+      "partners": [
+        "PARP1",
+        "BAZ1A",
+        "BAZ1B",
+        "BRD1",
+        "BRD2",
+        "BRD3",
+        "CBX2",
+        "CBX3",
+        "CBX5",
+        "CENPC",
+        "CHAF1A",
+        "CHAF1B",
+        "CHD1",
+        "CHD3",
+        "DEK",
+        "DNMT1",
+        "DNMT3A",
+        "H1-10",
+        "MACROH2A1",
+        "H2AZ1",
+        "H2BC17",
+        "HELLS",
+        "HMGB1",
+        "HMG20A",
+        "MAZ",
+        "MECP2",
+        "KMT2A",
+        "MLLT1",
+        "MLLT6",
+        "MSH6",
+        "MYBBP1A",
+        "NAP1L1",
+        "NAP1L4",
+        "NUCLEOLIN",
+        "NPM1",
+        "PHF2",
+        "ZMYND8",
+        "PSIP1",
+        "RAI1",
+        "RNF2",
+        "SET",
+        "SMARCA1",
+        "HLTF",
+        "SMARCA4",
+        "SMARCA5",
+        "SMARCC1",
+        "SMARCC2",
+        "SSRP1",
+        "SUPT16H",
+        "SUPT6H",
+        "TAF1",
+        "TRIM24",
+        "TOP2A",
+        "TOP2B",
+        "UHRF1",
+        "VRK1",
+        "NSD2",
+        "NSD3",
+        "YY1",
+        "ZMYM3",
+        "ZNF711",
+        "KDM2A",
+        "KDM2B",
+        "NSD1",
+        "BRPF1",
+        "BRD7",
+        "PRPF31",
+        "ARID4B",
+        "PHIP",
+        "KMT2B",
+        "CBX8",
+        "ANP32E",
+        "CDC73",
+        "CTR9",
+        "SUZ12",
+        "TAF3",
+        "SENP3",
+        "ARID2",
+        "RSF1",
+        "SMARCAD1",
+        "SHPRH",
+        "SIN3A",
+        "USP36",
+        "CHD7",
+        "PHF8",
+        "PHF14",
+        "L3MBTL3",
+        "DNTTIP2",
+        "GLYR1",
+        "NOC2L",
+        "EHMT1",
+        "H2BC18",
+        "HP1BP3",
+        "PAF1",
+        "BCORL1",
+        "LAS1L",
+        "TEX10",
+        "MSL1",
+        "NIPBL",
+        "ZNF592",
+        "MYSM1",
+        "MTF2",
+        "H4C15",
+        "MPHOSPH8",
+        "NAT10",
+        "GATAD2A",
+        "PBRM1",
+        "LEO1"
+      ],
+      "loc": 0.575
+    },
+    {
+      "symbol": "PHLDB3",
+      "v4_score": 61.839,
+      "purity": 0.187,
+      "chrom": 0.4209,
+      "partners": [
+        "BMAL1",
+        "CLOCK",
+        "HMG20A",
+        "MAX",
+        "TFPT",
+        "SIRT1",
+        "RCOR1",
+        "OIP5",
+        "MBIP",
+        "PHF21A",
+        "YEATS4",
+        "KDM1A"
+      ],
+      "loc": 0.595
+    },
+    {
+      "symbol": "JRKL",
+      "v4_score": 60.4405,
+      "purity": 0.1981,
+      "chrom": 0.3015,
+      "partners": [
+        "EP300",
+        "H4C1",
+        "SMARCA4",
+        "SMARCB1",
+        "WDR5"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "TIGD6",
+      "v4_score": 60.3845,
+      "purity": 0.2447,
+      "chrom": 0.4,
+      "partners": [
+        "CHAF1A",
+        "MTA1",
+        "HDGFL2",
+        "SS18L2"
+      ],
+      "loc": 0.75
+    },
+    {
+      "symbol": "FAM219B",
+      "v4_score": 59.049,
+      "purity": 0.2072,
+      "chrom": 0.2954,
+      "partners": [
+        "ELP2",
+        "ELP3"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "KIAA1549L",
+      "v4_score": 56.7827,
+      "purity": 0.3778,
+      "chrom": 0.3397,
+      "partners": [
+        "PARP3",
+        "USP7"
+      ],
+      "loc": 0.85
+    },
+    {
+      "symbol": "R3HDM4",
+      "v4_score": 56.67,
+      "purity": 0.4378,
+      "chrom": 0.308,
+      "partners": [
+        "H2BC9",
+        "NPM1"
+      ],
+      "loc": 0.85
+    }
+  ],
+  "coverage": {
+    "assessed_ge_60": 417,
+    "assessed_lt_60": 80
+  }
+}
