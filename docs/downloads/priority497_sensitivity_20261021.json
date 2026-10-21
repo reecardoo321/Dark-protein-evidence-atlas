@@ -17,7 +17,6 @@
         "EFCAB5",
         "ZDBF2",
         "NOAZFP",
-        "LONRF3",
         "KIAA0408",
         "TIGD2",
         "MSANTD3",
@@ -29,10 +28,11 @@
         "ZSWIM9",
         "EFCAB12",
         "R3HDM2",
-        "JRKL"
+        "JRKL",
+        "TCEANC2"
       ],
       "overlap_with_default20": 20,
-      "denominator_primary_queue": 83
+      "denominator_primary_queue": 82
     },
     {
       "scenario": "loc_emphasis",
@@ -52,7 +52,6 @@
         "THAP8",
         "EFCAB5",
         "ZDBF2",
-        "LONRF3",
         "KIAA0408",
         "MSANTD3",
         "TIGD2",
@@ -63,10 +62,11 @@
         "FLYWCH2",
         "ZSWIM9",
         "FAM131B",
-        "SH3BGRL2"
+        "SH3BGRL2",
+        "JRKL"
       ],
       "overlap_with_default20": 18,
-      "denominator_primary_queue": 83
+      "denominator_primary_queue": 82
     },
     {
       "scenario": "chromatin_emphasis",
@@ -85,7 +85,6 @@
         "EFCAB5",
         "ZDBF2",
         "NOAZFP",
-        "LONRF3",
         "TIGD2",
         "KIAA0408",
         "MSANTD3",
@@ -97,10 +96,11 @@
         "ZSWIM9",
         "EFCAB12",
         "JRKL",
-        "TIGD6"
+        "TIGD6",
+        "TSPYL6"
       ],
-      "overlap_with_default20": 19,
-      "denominator_primary_queue": 83
+      "overlap_with_default20": 18,
+      "denominator_primary_queue": 82
     },
     {
       "scenario": "no_length",
@@ -119,7 +119,6 @@
         "EFCAB5",
         "PHLDB3",
         "NOAZFP",
-        "LONRF3",
         "KIAA0408",
         "TIGD2",
         "MSANTD3",
@@ -131,10 +130,11 @@
         "ZSWIM9",
         "EFCAB12",
         "JRKL",
-        "TIGD6"
+        "TIGD6",
+        "TSPYL6"
       ],
-      "overlap_with_default20": 19,
-      "denominator_primary_queue": 83
+      "overlap_with_default20": 18,
+      "denominator_primary_queue": 82
     },
     {
       "scenario": "reliability_emphasis",
@@ -153,7 +153,6 @@
         "EFCAB5",
         "ZDBF2",
         "KIAA0408",
-        "LONRF3",
         "THAP8",
         "MSANTD3",
         "TIGD2",
@@ -165,10 +164,11 @@
         "CIMIP6",
         "R3HDM2",
         "RSRC2",
-        "TCEANC2"
+        "TCEANC2",
+        "TSTD2"
       ],
       "overlap_with_default20": 18,
-      "denominator_primary_queue": 83
+      "denominator_primary_queue": 82
     },
     {
       "scenario": "unassessed_components_0",
@@ -180,7 +180,6 @@
         "EFCAB5",
         "ZDBF2",
         "NOAZFP",
-        "LONRF3",
         "KIAA0408",
         "TIGD2",
         "MSANTD3",
@@ -192,7 +191,8 @@
         "ZSWIM9",
         "EFCAB12",
         "R3HDM2",
-        "JRKL"
+        "JRKL",
+        "TCEANC2"
       ],
       "overlap_with_default20": 20,
       "note": "missingness scenario bound; not statistical confidence"
@@ -207,7 +207,6 @@
         "EFCAB5",
         "ZDBF2",
         "NOAZFP",
-        "LONRF3",
         "KIAA0408",
         "TIGD2",
         "MSANTD3",
@@ -219,7 +218,8 @@
         "ZSWIM9",
         "EFCAB12",
         "R3HDM2",
-        "JRKL"
+        "JRKL",
+        "TCEANC2"
       ],
       "overlap_with_default20": 20,
       "note": "missingness scenario bound; not statistical confidence"
@@ -251,7 +251,7 @@
       "stratum": "100-1000",
       "n": 434,
       "median_raw_score": 46.2520865,
-      "primary_queue": 70
+      "primary_queue": 69
     },
     {
       "axis": "length",
@@ -286,7 +286,7 @@
       "stratum": "6-20",
       "n": 147,
       "median_raw_score": 44.965425,
-      "primary_queue": 33
+      "primary_queue": 32
     },
     {
       "axis": "observed_PPI_degree",
@@ -314,7 +314,7 @@
       "stratum": ">20",
       "n": 72,
       "median_raw_score": 52.6903245,
-      "primary_queue": 25
+      "primary_queue": 24
     }
   ]
 }

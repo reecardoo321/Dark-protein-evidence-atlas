@@ -1,6 +1,6 @@
 {
   "schema": "new497_localization_epigenetic_priority_v1",
-  "created_utc": "2026-10-21T07:38:45.786114+00:00",
+  "created_utc": "2026-10-21T07:54:15.784003+00:00",
   "scope": 497,
   "user_accepted_weights": {
     "localization": 25,
@@ -20,7 +20,7 @@
   "hub_weight": "sqrt(50/(50+partner_degree_in_current9903_graph)); broad-context reference .25, dedicated reference1; primary queue requires dedicated hit",
   "reliability_formula": ".6*mean(top3 relation-class weights)+.3*min(1,programme_proxies/3)+.1*any_explicit_context; use core edges when any, otherwise all reported edges; shared identity capped .5",
   "study_caveat": "programme proxies, not independent replication counts; same source duplicates never add votes",
-  "mechanistic_opportunity": "own member mechanism=.15; high-coverage compatible-architecture near relative with experimental function=.25; otherwise unassessed null displayed .5 with 0-1 bounds; no PubMed-count or empty-FUNCTION reward",
+  "mechanistic_opportunity": "own member mechanism=.15; high-coverage compatible-architecture near relative with experimental function OR curated mechanistic member at identity>=.35, BOTH coverage>=.7 and shared Pfam=.25; latter is family-mechanism review not redundancy; otherwise unassessed null displayed .5 with 0-1 bounds; no PubMed-count or empty-FUNCTION reward",
   "tractability": "min(1,length/100,1000/length); five points maximum; no hard exclusion",
   "unknowns": "null+mask, neutral .5 for display, score bounds not CI; zero observed chromatin hits means zero evidence support, not functional negative",
   "queue_priority": [
