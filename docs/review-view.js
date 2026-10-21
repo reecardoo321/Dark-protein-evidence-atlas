@@ -7,7 +7,7 @@
  const reviewRows=new Map(((window.ATLAS_REVIEW_INDEX&&window.ATLAS_REVIEW_INDEX.rows)||[]).map(r=>[r.symbol,r]));
  let opts={onOpenGene:function(){},onToast:function(){},onChange:function(){}};
  let filter='unreviewed',scope='subset',index=0,autoNext=true,sort='priority';
- const FILTERS=[['unreviewed','未逐项确认'],['acceptReviewed','已接受'],['reject','已拒绝'],['pending','待定'],['all497','全部497'],['not_in_subset','219未纳入'],['all716','全部716']];
+ const FILTERS=[['unreviewed','未逐项确认'],['acceptReviewed','已确认接受'],['reject','已拒绝'],['pending','待定'],['all497','全部497'],['not_in_subset','219未纳入'],['all716','全部716']];
  const QORDER=Object.keys(PUI.queues).reduce(function(m,k,i){m[k]=i;return m},{});
  function cmpPriority(a,b){
   const ra=PUI.get(a.symbol),rb=PUI.get(b.symbol);
