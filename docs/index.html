@@ -4,8 +4,8 @@
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
  <meta name="description" content="716个人类候选蛋白的实验互作、分子亲缘与最新家族注释浏览器。">
  <title>Dark Protein Atlas · 候选证据浏览器</title>
- <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css?v=20261021-review-v1">
- <script defer src="data/index.js"></script><script defer src="model.js?v=20261021-review-v1"></script><script defer src="review-data/index.js?v=20261021-review-v1"></script><script defer src="review-media.js?v=20261021-review-v1"></script><script defer src="priority-data/index.js?v=20261021-review-v1"></script><script defer src="priority-integrated.js?v=20261021-review-v1"></script><script defer src="review-state.js?v=20261021-review-v1"></script><script defer src="review-view.js?v=20261021-review-v1"></script><script defer src="app.js?v=20261021-review-v1"></script>
+ <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css?v=20261022-v4-1">
+ <script defer src="data/index.js"></script><script defer src="model.js?v=20261022-v4-1"></script><script defer src="review-data/index.js?v=20261022-v4-1"></script><script defer src="review-media.js?v=20261022-v4-1"></script><script defer src="priority-data/index.js?v=20261022-v4-1"></script><script defer src="priority-integrated.js?v=20261022-v4-1"></script><script defer src="review-state.js?v=20261022-v4-1"></script><script defer src="review-view.js?v=20261022-v4-1"></script><script defer src="app.js?v=20261022-v4-1"></script>
 </head>
 <body>
  <a class="skip-link" href="#main">跳到内容</a>
@@ -20,7 +20,7 @@
    <button class="nav-button" data-view="families"><span>家族与结构分组</span><span>81</span></button>
    <button class="nav-button" data-view="methods"><span>方法与数据来源</span><span>↗</span></button>
   </nav>
-  <div class="sidebar-section">名单关系 · 716 ⊃ 497</div>
+  <div class="sidebar-section">名单关系 · 716 = 497 + 219</div>
   <div class="status-buttons" role="group" aria-label="审阅状态">
    <button class="status-button active" data-status=""><span>全部候选</span><b>716</b></button>
    <button class="status-button" data-status="new"><span><i class="status-dot new"></i>497 · 人工子集</span><b>497</b></button>
@@ -36,7 +36,7 @@
   </div>
   <button id="saved-only" class="saved-button" aria-pressed="false">☆ 我的关注 <span id="saved-count">0</span></button>
   <div class="sidebar-note"><strong>两层状态要分开</strong><p>716 是主池；497 是人工子集；219 只是未纳入最新497，不是生物学阴性。accept/reject 是你在本轮逐项审查里的判断，另存一层。</p><p>关注、笔记和审查结果仅保存在本浏览器。</p></div>
-  <div class="sidebar-bottom"><span class="snapshot-dot"></span>排名与定位更新 · 2026.10.21</div>
+  <div class="sidebar-bottom"><span class="snapshot-dot"></span>评分修复 v4.1 · 2026.10.22</div>
  </aside>
  <div class="shell">
   <header class="topbar"><span>人类蛋白 · 双轨证据</span><div><button id="about" class="text-button">阅读说明</button><button class="text-button" data-review-import="1">导入审查</button><button class="text-button" data-review-export="1">导出审查</button></div></header>
@@ -48,7 +48,7 @@
     <button class="stat" data-stat="rejected"><span>未纳入最新497 <i class="pill rejected">219</i></span><strong>219</strong><small>不是生物学阴性，仍可审查</small></button>
     <button class="stat" data-stat="molecular"><span>有合格分子参考</span><strong>354<span class="stat-unit"> / 716</span></strong><small>5,111 条已知参考配对</small></button>
    </section>
-   <div class="review-notice scope-note"><strong>716 主池 ⊃ 497 人工子集 ⊃ 219 未纳入。</strong> 497 是人工从716中挑出的当前子集；219 不是被科学否定，只是未在最新表中。497 默认标记为 accept，但你的逐项审查另存一层：在“逐个审查”里接受/拒绝/待定，或直接在总表点 ✓ / ✗。当前优先度总分为 v4 单总分（远端 guard 重算、独立 QA pass）；无 A/B/C/D；v3 分量与历史分保留。</div><section class="filter-panel" id="filters" aria-label="数据筛选">
+   <div class="review-notice scope-note"><strong>716 主池 = 497 人工子集 + 219 未纳入。</strong> 497 是人工从716中挑出的当前子集；219 不是被科学否定，只是未在最新表中。497 默认标记为 accept，但你的逐项审查另存一层：在“逐个审查”里接受/拒绝/待定，或直接在总表点 ✓ / ✗。当前优先度总分为 v4.1 修复版（远端重算、独立 QA pass）；无 A/B/C/D；v3 分量与历史分保留。</div><section class="filter-panel" id="filters" aria-label="数据筛选">
     <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="搜索蛋白、别名、伙伴或功能" placeholder="搜索基因、别名、UniProt、互作伙伴或功能关键词…"><kbd>/</kbd></div>
     <div class="filter-row">
      <label>历史来源层<select id="loc-filter"><option value="">全部层级</option><option value="L1">L1 · 强来源支持</option><option value="L2">L2 · 较低特异性支持</option><option value="L3">L3 · 提示性支持</option><option value="L0">L0 · 未解决</option></select></label>

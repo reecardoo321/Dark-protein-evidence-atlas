@@ -12,8 +12,7 @@
   const ra=PUI.get(a.symbol),rb=PUI.get(b.symbol);
   if(!ra&&!rb)return a.originalOrder-b.originalOrder;
   if(!ra)return 1;if(!rb)return -1;
-  const sa=PUI.score(a.symbol),sb=PUI.score(b.symbol);
-  return ((sb==null?-1:sb)-(sa==null?-1:sa))||(a.originalOrder-b.originalOrder);
+  return PUI.exportRecord(a).rank-PUI.exportRecord(b).rank;
  }
  function rows(){
   let list=RS.list(scope,filter);

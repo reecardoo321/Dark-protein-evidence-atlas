@@ -1,0 +1,154 @@
+{
+  "status": "pass",
+  "checks": {
+    "exact_identity_and_scope": true,
+    "non_localization_components_unchanged": true,
+    "all_source_routing_and_unchanged_other_cases": true,
+    "metadata_matches_computed_component": true,
+    "independent_arithmetic_all497": true,
+    "no_tiers_no_fake_probability": true,
+    "order": true,
+    "frozen_group_membership_and435groups": true,
+    "representatives_updated_not_deleted": true,
+    "no_old_output_mutation": true,
+    "tsv_all_rows_nested_diagnostics": true,
+    "tsv_representative_and_branch": true,
+    "localization_sensitivity_propagated": true,
+    "presets": true,
+    "dynamic_math_bounds": true,
+    "positive_literature_rule_unchanged": true
+  },
+  "case_counts": {
+    "nuclear_additional": 69,
+    "mixed_main": 61,
+    "non_nuclear": 32
+  },
+  "rows": 497,
+  "groups": 435,
+  "representatives": 435,
+  "changed_scores": 94,
+  "examples": {
+    "KANSL1L": {
+      "score_before": 52.289,
+      "score": 41.039,
+      "rank_before": 104,
+      "rank": 221,
+      "localization": {
+        "component": 0.1,
+        "group": "non_nuclear",
+        "HPA_category": "non_nuclear_IF",
+        "main": [
+          "cytosol"
+        ],
+        "additional": [],
+        "reliability": "approved",
+        "cross_reactivity": false,
+        "experimental_UniProt": [],
+        "experimental_GO_CC": [],
+        "IF_images": 6,
+        "manual_review": "not_yet_reviewed",
+        "flags": [],
+        "interval": [
+          0.04,
+          0.16
+        ],
+        "formula_version": "v4_1_repair_20261022",
+        "independent_UniProt_support": false,
+        "independent_GO_support": false
+      }
+    },
+    "FAM149C": {
+      "score_before": 49.0617,
+      "score": 37.8117,
+      "rank_before": 146,
+      "rank": 258,
+      "localization": {
+        "component": 0.1,
+        "group": "non_nuclear",
+        "HPA_category": "non_nuclear_IF",
+        "main": [
+          "cytosol",
+          "plasma membrane"
+        ],
+        "additional": [],
+        "reliability": "uncertain",
+        "cross_reactivity": false,
+        "experimental_UniProt": [],
+        "experimental_GO_CC": [],
+        "IF_images": 2,
+        "manual_review": "not_yet_reviewed",
+        "flags": [],
+        "interval": [
+          0,
+          0.3
+        ],
+        "formula_version": "v4_1_repair_20261022",
+        "independent_UniProt_support": false,
+        "independent_GO_support": false
+      }
+    },
+    "C9orf85": {
+      "score_before": 72.7498,
+      "score": 66.4998,
+      "rank_before": 4,
+      "rank": 7,
+      "localization": {
+        "component": 0.3,
+        "group": "nuclear_additional",
+        "HPA_category": "nuclear_additional",
+        "main": [
+          "golgi apparatus"
+        ],
+        "additional": [
+          "nucleoli",
+          "nucleoplasm"
+        ],
+        "reliability": "approved",
+        "cross_reactivity": false,
+        "experimental_UniProt": [],
+        "experimental_GO_CC": [],
+        "IF_images": 6,
+        "manual_review": "not_yet_reviewed",
+        "flags": [],
+        "interval": [
+          0.24,
+          0.36
+        ],
+        "formula_version": "v4_1_repair_20261022",
+        "independent_UniProt_support": false,
+        "independent_GO_support": false
+      }
+    },
+    "THAP6": {
+      "score_before": 53.7159,
+      "score": 47.4659,
+      "rank_before": 90,
+      "rank": 158,
+      "localization": {
+        "component": 0.3,
+        "group": "nuclear_additional",
+        "HPA_category": "nuclear_additional",
+        "main": [
+          "centrosome"
+        ],
+        "additional": [
+          "nucleoplasm"
+        ],
+        "reliability": "approved",
+        "cross_reactivity": false,
+        "experimental_UniProt": [],
+        "experimental_GO_CC": [],
+        "IF_images": 6,
+        "manual_review": "not_yet_reviewed",
+        "flags": [],
+        "interval": [
+          0.24,
+          0.36
+        ],
+        "formula_version": "v4_1_repair_20261022",
+        "independent_UniProt_support": false,
+        "independent_GO_support": false
+      }
+    }
+  }
+}

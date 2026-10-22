@@ -1,0 +1,254 @@
+{
+  "status": "computed_pending_independent_QA",
+  "genes": 497,
+  "weights": {
+    "localization": 25,
+    "epigenetic": 35,
+    "reliability": 20,
+    "opportunity": 15,
+    "tractability": 5
+  },
+  "top20": [
+    {
+      "symbol": "CRYBG2",
+      "score": 79.1032,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "LRRC42",
+      "score": 76.6087,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "C8orf74",
+      "score": 76.3253,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "EFCAB5",
+      "score": 68.5005,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "TIGD2",
+      "score": 67.0812,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "ZDBF2",
+      "score": 66.9651,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "C9orf85",
+      "score": 66.4998,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "MSANTD3",
+      "score": 66.3968,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "EFCAB12",
+      "score": 66.0622,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "MAB21L3",
+      "score": 65.5946,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "ZSWIM9",
+      "score": 65.3759,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "THAP8",
+      "score": 64.5644,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "TMEM35B",
+      "score": 64.3378,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "PNMA8A",
+      "score": 63.8471,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "LONRF3",
+      "score": 63.7042,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "KIAA0408",
+      "score": 63.3272,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "CIMIP6",
+      "score": 63.2798,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "RIPOR3",
+      "score": 62.9753,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "NOAZFP",
+      "score": 62.6252,
+      "coverage": 1.0
+    },
+    {
+      "symbol": "PHLDB3",
+      "score": 61.8401,
+      "coverage": 1.0
+    }
+  ],
+  "coverage": {
+    "ge_60": 417,
+    "lt_60": 80
+  },
+  "representatives": 435,
+  "no_tiers": true,
+  "calibrated_probability": false,
+  "model_complete": false,
+  "representative_changes": [
+    {
+      "group_anchor": "CT45A6",
+      "previous_representative": "CT45A6",
+      "representative": "CT45A5",
+      "members": [
+        "CT45A5",
+        "CT45A3",
+        "CT45A10",
+        "CT45A6",
+        "CT45A2",
+        "CT45A9",
+        "CT45A8",
+        "CT45A7"
+      ]
+    },
+    {
+      "group_anchor": "DCAF4L2",
+      "previous_representative": "DCAF4L2",
+      "representative": "DCAF4L1",
+      "members": [
+        "DCAF4L1",
+        "DCAF4L2"
+      ]
+    },
+    {
+      "group_anchor": "PRR23A",
+      "previous_representative": "PRR23A",
+      "representative": "PRR23B",
+      "members": [
+        "PRR23B",
+        "PRR23A",
+        "PRR23C"
+      ]
+    },
+    {
+      "group_anchor": "NUTM2D",
+      "previous_representative": "NUTM2D",
+      "representative": "NUTM2B",
+      "members": [
+        "NUTM2B",
+        "NUTM2A",
+        "NUTM2F",
+        "NUTM2G",
+        "NUTM2D",
+        "NUTM2E"
+      ]
+    },
+    {
+      "group_anchor": "FAM153B",
+      "previous_representative": "FAM153B",
+      "representative": "FAM153A",
+      "members": [
+        "FAM153A",
+        "FAM153B"
+      ]
+    },
+    {
+      "group_anchor": "MAGEB17",
+      "previous_representative": "MAGEB17",
+      "representative": "MAGEB3",
+      "members": [
+        "MAGEB3",
+        "MAGEB17"
+      ]
+    },
+    {
+      "group_anchor": "NBPF4",
+      "previous_representative": "NBPF4",
+      "representative": "NBPF6",
+      "members": [
+        "NBPF6",
+        "NBPF4"
+      ]
+    },
+    {
+      "group_anchor": "GOLGA8N",
+      "previous_representative": "GOLGA8N",
+      "representative": "GOLGA8O",
+      "members": [
+        "GOLGA8O",
+        "GOLGA8M",
+        "GOLGA8J",
+        "GOLGA8Q",
+        "GOLGA8H",
+        "GOLGA8R",
+        "GOLGA8K",
+        "GOLGA8N"
+      ]
+    },
+    {
+      "group_anchor": "CT47A2",
+      "previous_representative": "CT47A2",
+      "representative": "CT47A11",
+      "members": [
+        "CT47A11",
+        "CT47A1",
+        "CT47A3",
+        "CT47A6",
+        "CT47A10",
+        "CT47A12",
+        "CT47A2",
+        "CT47A4",
+        "CT47A5",
+        "CT47A7",
+        "CT47A8",
+        "CT47A9",
+        "CT47B1"
+      ]
+    },
+    {
+      "group_anchor": "FAM157A",
+      "previous_representative": "FAM157A",
+      "representative": "FAM157B",
+      "members": [
+        "FAM157B",
+        "FAM157C",
+        "FAM157A"
+      ]
+    },
+    {
+      "group_anchor": "TRIM49D2",
+      "previous_representative": "TRIM49D2",
+      "representative": "TRIM51G",
+      "members": [
+        "TRIM51G",
+        "TRIM49D1",
+        "TRIM49D2"
+      ]
+    }
+  ],
+  "score_changed": 94,
+  "rank_changed": 370
+}

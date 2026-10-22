@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "version": "new497-v4.1-repair-20261022",
+  "comparisons": 4473,
+  "weight_scenarios": 9,
+  "all497_frontend_native_agree": true,
+  "contributions_sum": true,
+  "coverage_in_bounds": true,
+  "dynamic_representatives": true,
+  "manual_state_roundtrip": true,
+  "original_data_media_unchanged": true,
+  "native_independent_checks": 16,
+  "native_builder_review_publish_exits": [
+    0,
+    0,
+    0
+  ],
+  "browser_local": {
+    "C9orf85_rank": 7,
+    "C9orf85_score": 66.5,
+    "no_length_CRYBG2_coverage": 100,
+    "no_length_CRYBG2_score": 80.1,
+    "TEX35_coverage": 75,
+    "TEX35_factor": 0.9,
+    "console_errors": 0
+  },
+  "preserved_assets": [
+    "data",
+    "review-data",
+    "profiles",
+    "annotations",
+    "vendor",
+    "review-state.js",
+    "review-media.js",
+    "model.js"
+  ],
+  "method_scope": "v4.1 fixes only; five weights and positive Gene-PMID rule unchanged; no probability calibration",
+  "sha256": {
+    "downloads/priority497_v4_1_comparison_20261022.json": "a2b947d5b2ea0fa98da0137daf45772f76fac0f51b76e17e1c07d6b77f82784c",
+    "downloads/priority497_v4_1_independent_qa_20261022.json": "30ef9e3ec3af0ed60aac97311d723fbe693ace41ed1dcfbb6e7049427d8ea516",
+    "downloads/priority497_v4_1_protocol_20261022.json": "3ba2903250975d47bd048daaf7cd04ec446a0bce34efaac2bbcabf829db9b600",
+    "downloads/priority497_v4_1_report_20261022.md": "5bbe51f91f3c8c735c2ebdc65155ee234c96e83fcfdc6f382b4bcdd9fc25b609",
+    "downloads/priority497_v4_1_summary_20261022.json": "a6d356c882c1d318b9e9a7f003b367ed9b59ba2219b00d0d6af50b63dae8abf8",
+    "downloads/ranked_new497_v4_1_20261022.tsv": "890c0ebcaa738bdc0ac1207a643bdccddc23b7f4dd9e31b3b8da11734de0a8d2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "priority497_v4_1_repair_1",
+  "created_utc": "2026-10-22T12:34:43.478985+00:00",
+  "scope": 497,
+  "weights": {
+    "localization": 25,
+    "epigenetic": 35,
+    "reliability": 20,
+    "opportunity": 15,
+    "tractability": 5
+  },
+  "role": "single heuristic priority total; no A/B/C/D or A1/A2",
+  "input_sha256": "c8c8528985f253e884442662df2c2802924212220f800630812065654e5f4a89",
+  "v3_source": "/home/hujiatong/protein_atlas/model_v1/outputs/priority497_localization_20261021_v3/ranked_candidates497.json",
+  "p0": 0.087214,
+  "aggregation": "base=sum(w*component); loc/chrom/rel missing=0; opportunity null fallback=0.5; coverage=(assessed loc/chrom/rel weights+wO+wT)/sum(weights); score=base*(0.6+0.4*coverage)",
+  "no_tiers": true,
+  "model_complete": false,
+  "calibrated_probability": false,
+  "version": "v4.1 repair of v4",
+  "parent_json": "/home/hujiatong/protein_atlas/model_v1/outputs/priority497_v4_single_score_20261021/ranked_candidates497_v4.json",
+  "parent_sha256": "bf3217ab62920b68a96d529b2ec30f101967c345364b97bfc14c1b16e580565c",
+  "localization_branch": "nuclear-only main: existing branch; nuclear AND extranuclear main: .55; extranuclear main with nuclear additional: .30; HPA without nuclear support: .10; independent support/cross-reactivity adjustments unchanged",
+  "localization_intervals": "existing source-reliability heuristic widths propagated separately; not CI",
+  "opportunity": "O=(2*N+study)/3; study=clip(log1p(Gene_PMIDs)/log(60)); default contribution about 10*N+5*study; count is association, not functional study count; proxy is not exhaustive mechanism review",
+  "chromatin_numerator": "hub weights of dedicated core edges (specificity_weight==1); broad .25 references excluded from numerator; all observed edges in denominator",
+  "representatives": "fixed v3 direct-star group membership/anchor; highest current v4.1 score inside group; tie prefers old anchor then symbol; no member removed; no all-pairs equivalence claim",
+  "unknown_upper": "base plus maximum missing L/E/R weights, hypothetical not statistical CI"
+}
