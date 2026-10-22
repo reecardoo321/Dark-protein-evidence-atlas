@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "checks": {
+    "scope_exact": true,
+    "fresh_all300_rejected": true,
+    "batch_not_individual": true,
+    "all_reject_filter": true,
+    "backup_exact": true,
+    "inside_decisions_notes_untouched": true,
+    "outside_prior_accept_overridden": true,
+    "existing_manual_reject_preserved": true,
+    "outside_all_rejected": true,
+    "once_only_manual_override_kept": true,
+    "json_roundtrip_origins_notes": true,
+    "reset_restores_list_reject": true,
+    "reset_all_retains_policy_and_notes": true,
+    "csv_has_provenance": true,
+    "policy_before_reviewstate": true,
+    "scientific_and_media_unchanged": true
+  },
+  "source_sha256": "224d6abaabb08d729fac698bf0fa17243e3f18b218d3ca4cef4a022e5550a509",
+  "keep": 416,
+  "reject": 300,
+  "additional_in_original497": 81,
+  "default_counts": {
+    "scope": "all",
+    "total": 716,
+    "reviewed": 0,
+    "unreviewed": 416,
+    "accept": 416,
+    "reject": 300,
+    "pending": 0,
+    "not_in_subset": 0,
+    "acceptReviewed": 0,
+    "batchRejected": 300
+  },
+  "independent_workbook_reader_agrees": true,
+  "browser_local": {
+    "reject_filter_count": 300,
+    "review_reject_queue": 300,
+    "individual_reviewed": 0,
+    "batch_rejected": 300,
+    "console_errors": 0
+  },
+  "changed_data_layer": "User review decisions only; v4.1 numerical ranking and scientific/media assets unchanged"
+}

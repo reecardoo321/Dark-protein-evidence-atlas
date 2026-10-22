@@ -4,8 +4,8 @@
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
  <meta name="description" content="716个人类候选蛋白的实验互作、分子亲缘与最新家族注释浏览器。">
  <title>Dark Protein Atlas · 候选证据浏览器</title>
- <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css?v=20261022-v4-1">
- <script defer src="data/index.js"></script><script defer src="model.js?v=20261022-v4-1"></script><script defer src="review-data/index.js?v=20261022-v4-1"></script><script defer src="review-media.js?v=20261022-v4-1"></script><script defer src="priority-data/index.js?v=20261022-v4-1"></script><script defer src="priority-integrated.js?v=20261022-v4-1"></script><script defer src="review-state.js?v=20261022-v4-1"></script><script defer src="review-view.js?v=20261022-v4-1"></script><script defer src="app.js?v=20261022-v4-1"></script>
+ <link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="review.css?v=20261022-list416">
+ <script defer src="data/index.js"></script><script defer src="model.js?v=20261022-list416"></script><script defer src="review-data/index.js?v=20261022-list416"></script><script defer src="review-media.js?v=20261022-list416"></script><script defer src="priority-data/index.js?v=20261022-list416"></script><script defer src="priority-integrated.js?v=20261022-list416"></script><script defer src="review-list-policy.js?v=20261022-list416"></script><script defer src="review-state.js?v=20261022-list416"></script><script defer src="review-view.js?v=20261022-list416"></script><script defer src="app.js?v=20261022-list416"></script>
 </head>
 <body>
  <a class="skip-link" href="#main">跳到内容</a>
@@ -20,22 +20,22 @@
    <button class="nav-button" data-view="families"><span>家族与结构分组</span><span>81</span></button>
    <button class="nav-button" data-view="methods"><span>方法与数据来源</span><span>↗</span></button>
   </nav>
-  <div class="sidebar-section">名单关系 · 716 = 497 + 219</div>
+  <div class="sidebar-section">历史范围 · 716 = 497 + 219</div>
   <div class="status-buttons" role="group" aria-label="审阅状态">
    <button class="status-button active" data-status=""><span>全部候选</span><b>716</b></button>
-   <button class="status-button" data-status="new"><span><i class="status-dot new"></i>497 · 人工子集</span><b>497</b></button>
-   <button class="status-button" data-status="rejected"><span><i class="status-dot rejected"></i>219 · 未纳入</span><b>219</b></button>
+   <button class="status-button" data-status="new"><span><i class="status-dot new"></i>497 · 原评分范围</span><b>497</b></button>
+   <button class="status-button" data-status="rejected"><span><i class="status-dot rejected"></i>219 · 历史未纳入</span><b>219</b></button>
   </div>
   <div class="sidebar-section">逐个审查</div>
   <div class="review-progress">
-   <div class="review-progress-line"><strong id="review-reviewed">0</strong> / <span id="review-total">497</span> 已逐项确认</div>
+   <div class="review-progress-line"><strong id="review-reviewed">0</strong> / <span id="review-total">716</span> 已逐项确认</div>
    <div class="progress-track" aria-hidden="true"><span id="review-progress-bar"></span></div>
    <div class="review-counts"><span class="ok">已确认接受 <b id="review-accept">0</b></span><span class="no">拒绝 <b id="review-reject">0</b></span><span class="wait">待定 <b id="review-pending">0</b></span></div>
    <button class="review-start" data-view="review">开始 / 继续审查</button>
-   <p class="sidebar-note">497 默认全部是 accept，但“已逐项确认”从 0 开始。导出 JSON/CSV 可备份或交给项目方。</p>
+   <p class="sidebar-note">本次表内416名保留原判断，表外300名已批量reject。<span id="review-batch-note"></span>批量排除不计为逐项人工确证。导出JSON/CSV可备份。</p>
   </div>
   <button id="saved-only" class="saved-button" aria-pressed="false">☆ 我的关注 <span id="saved-count">0</span></button>
-  <div class="sidebar-note"><strong>两层状态要分开</strong><p>716 是主池；497 是人工子集；219 只是未纳入最新497，不是生物学阴性。accept/reject 是你在本轮逐项审查里的判断，另存一层。</p><p>关注、笔记和审查结果仅保存在本浏览器。</p></div>
+  <div class="sidebar-note"><strong>两层状态要分开</strong><p>716是主池，497与219是历史分组。本次主表416名，表外300名已按指令reject；这是用户选题决定，原证据保留。</p><p>关注、笔记和审查结果仅保存在本浏览器。</p></div>
   <div class="sidebar-bottom"><span class="snapshot-dot"></span>评分修复 v4.1 · 2026.10.22</div>
  </aside>
  <div class="shell">
@@ -44,11 +44,11 @@
    <section class="page-heading"><div><p class="eyebrow">CANDIDATE REVIEW</p><h1 id="page-title">候选蛋白总表</h1><p id="page-description">从原始候选到最新保留名单，在同一处查看实验关联、分子亲缘与功能解释。</p></div><div class="heading-actions"><button id="compare" class="button" disabled>比较所选 <span id="compare-count">0</span>/4</button><button id="export" class="button primary">↓ 导出当前结果</button></div></section>
    <section class="stats" aria-label="数据覆盖">
     <button class="stat" data-stat="all"><span>原始候选</span><strong>716</strong><small>保留全部历史记录</small></button>
-    <button class="stat" data-stat="new"><span>人工子集 <i class="pill new">497</i></span><strong>497</strong><small>从716中人工保留</small></button>
-    <button class="stat" data-stat="rejected"><span>未纳入最新497 <i class="pill rejected">219</i></span><strong>219</strong><small>不是生物学阴性，仍可审查</small></button>
+    <button class="stat" data-stat="new"><span>原评分范围 <i class="pill new">497</i></span><strong>497</strong><small>从716中人工保留</small></button>
+    <button class="stat" data-stat="rejected"><span>历史未纳入 <i class="pill rejected">219</i></span><strong>219</strong><small>不是生物学阴性，仍可审查</small></button>
     <button class="stat" data-stat="molecular"><span>有合格分子参考</span><strong>354<span class="stat-unit"> / 716</span></strong><small>5,111 条已知参考配对</small></button>
    </section>
-   <div class="review-notice scope-note"><strong>716 主池 = 497 人工子集 + 219 未纳入。</strong> 497 是人工从716中挑出的当前子集；219 不是被科学否定，只是未在最新表中。497 默认标记为 accept，但你的逐项审查另存一层：在“逐个审查”里接受/拒绝/待定，或直接在总表点 ✓ / ✗。当前优先度总分为 v4.1 修复版（远端重算、独立 QA pass）；无 A/B/C/D；v3 分量与历史分保留。</div><section class="filter-panel" id="filters" aria-label="数据筛选">
+   <div class="review-notice scope-note"><strong>本次名单416名；表外300名按用户指令批量reject。</strong> 以新工作簿“综合注释497”主表的“蛋白”列为准，旧标题及备份表仍为497。300名包括原评分范围中81名及历史未纳入219名；排除原因是“名单外”，不作功能阴性解释。原716记录、497评分、IF与PPI证据保留，表内已有判断和笔记不改。<a href="downloads/user_list_decisions716_20261022.tsv">下载名单对照</a>。批量指令首次载入时同步一次并备份浏览器原判断，后续可手动修改。</div><section class="filter-panel" id="filters" aria-label="数据筛选">
     <div class="search-wrap"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="搜索蛋白、别名、伙伴或功能" placeholder="搜索基因、别名、UniProt、互作伙伴或功能关键词…"><kbd>/</kbd></div>
     <div class="filter-row">
      <label>历史来源层<select id="loc-filter"><option value="">全部层级</option><option value="L1">L1 · 强来源支持</option><option value="L2">L2 · 较低特异性支持</option><option value="L3">L3 · 提示性支持</option><option value="L0">L0 · 未解决</option></select></label>

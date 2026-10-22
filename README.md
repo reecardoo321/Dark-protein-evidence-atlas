@@ -161,3 +161,10 @@ GitHub Pages 可选择 **Settings → Pages → Deploy from a branch → main �
 页面组织参考 [Protein Scout 蛋白总表](https://quii490.github.io/protein-scout-TEreg-finding/docs/protein_index.html)，未沿用其评分或排除结论。
 
 本项目用于研究线索组织和候选审阅。任何新的功能归属、直接相互作用或机制结论，仍需结合原始研究和独立实验验证。
+
+
+### 2026-10-22 用户名单排除
+
+以用户提供工作簿“综合注释497”主表B列“蛋白”为准，实际416个唯一基因全部精确匹配716池；旧标题和“原始筛选表”仍有497，不作为本次保留集。表外300名（原497中81名，以及历史未纳入219名）按用户指令标为reject。原716、497评分及科学证据保留，名单内已有判断/笔记不变。
+
+网页对新旧浏览器应用一次版本化指令，迁移前备份原浏览器状态，后续人工修改不被重复覆盖。批量排除记录判断来源和工作簿SHA，不计为逐项人工确证，也不当作生物功能阴性。名单对照见[716决策表](docs/downloads/user_list_decisions716_20261022.tsv)，来源及精确名单见[名单依据](docs/downloads/user_list416_exclusions_20261022.json)。

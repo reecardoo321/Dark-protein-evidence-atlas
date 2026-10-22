@@ -7,7 +7,7 @@
  const reviewRows=new Map(((window.ATLAS_REVIEW_INDEX&&window.ATLAS_REVIEW_INDEX.rows)||[]).map(r=>[r.symbol,r]));
  let opts={onOpenGene:function(){},onToast:function(){},onChange:function(){}};
  let filter='unreviewed',scope='subset',index=0,autoNext=true,sort='priority';
- const FILTERS=[['unreviewed','未逐项确认'],['acceptReviewed','已确认接受'],['reject','已拒绝'],['pending','待定'],['all497','全部497'],['not_in_subset','219未纳入'],['all716','全部716']];
+ const FILTERS=[['unreviewed','未逐项确认'],['acceptReviewed','已确认接受'],['reject','已拒绝（全716）'],['pending','待定'],['all497','全部497'],['not_in_subset','219未纳入'],['all716','全部716']];
  function cmpPriority(a,b){
   const ra=PUI.get(a.symbol),rb=PUI.get(b.symbol);
   if(!ra&&!rb)return a.originalOrder-b.originalOrder;
@@ -32,13 +32,14 @@
  function statusPill(d,membership){
   let label=RS.label(d.status);
   if(d.status==='accept'&&!d.reviewed)label='默认接受 · 未确认';
+  else if(RS.isBatchReject(d))label+=' · 名单批量排除';
   else if(d.reviewed)label+=' · 已确认';
   return '<span class="review-pill '+E(d.status)+'">'+E(label)+'</span>';
  }
  function membershipBadge(g){
   return g.status==='new'
-   ?'<span class="pill new" title="在用户最新497人工子集中">497 人工子集</span>'
-   :'<span class="pill rejected" title="不在最新497人工子集中；不是生物学阴性">219 未纳入</span>';
+   ?'<span class="pill new" title="在原497评分范围中">原497评分范围</span>'
+   :'<span class="pill rejected" title="历史上不在497评分范围，当前决定另列">历史219未纳入</span>';
  }
  function progressHTML(){
   const s=cSub(),a=cAll();
@@ -46,14 +47,14 @@
    '<div class="review-progress-line"><strong>'+s.reviewed+'</strong> / '+s.total+' 已逐项确认'+
    '<span class="muted">接受 '+s.acceptReviewed+' · 拒绝 '+s.reject+' · 待定 '+s.pending+'</span></div>'+
    '<div class="progress-track" aria-hidden="true"><span style="width:'+pct(s.reviewed,s.total)+'%"></span></div>'+
-   '<div class="ref-label">497 默认接受；点击接受/拒绝后计入“已逐项确认”。全部716中已确认 '+a.reviewed+' / '+a.total+'。</div></div>';
+   '<div class="ref-label">原497中名单批量排除 '+s.batchRejected+' 名；全池批量排除 '+a.batchRejected+' 名，均不计逐项确证。全部716中人工确认 '+a.reviewed+' / '+a.total+'。</div></div>';
  }
  function tabsHTML(){
   const s=cSub(),a=cAll();
-  const count={unreviewed:s.unreviewed,acceptReviewed:s.acceptReviewed,reject:s.reject,pending:s.pending,all497:s.total,not_in_subset:a.not_in_subset,all716:a.total};
+  const count={unreviewed:s.unreviewed,acceptReviewed:s.acceptReviewed,reject:a.reject,pending:s.pending,all497:s.total,not_in_subset:a.not_in_subset,all716:a.total};
   return '<div class="review-tabs" role="group" aria-label="审查筛选">'+FILTERS.map(function(pair){
    const key=pair[0],name=pair[1];
-   const active=(key==='all716')?(scope==='all'&&filter==='all'):(key==='all497'?(scope==='subset'&&filter==='all'):(key==='not_in_subset'?(scope==='outside'&&filter==='not_in_subset'):(scope==='subset'&&filter===key)));
+   const active=key==='reject'?(scope==='all'&&filter==='reject'):(key==='all716')?(scope==='all'&&filter==='all'):(key==='all497'?(scope==='subset'&&filter==='all'):(key==='not_in_subset'?(scope==='outside'&&filter==='not_in_subset'):(scope==='subset'&&filter===key)));
    return '<button class="review-tab '+(active?'active':'')+'" data-review-action="tab" data-review-value="'+E(key)+'">'+E(name)+' <b>'+count[key]+'</b></button>';
   }).join('')+'</div>';
  }
@@ -76,7 +77,7 @@
     '<section class="review-section"><h4>定位与图像</h4><p>HPA 主定位：<b>'+E(loc.HPA_main||'未提供')+'</b><br>附加：'+E(loc.HPA_additional||'未提供')+'<br>基因级可靠性：'+E(loc.HPA_current_reliability||'未提供')+' · IF '+Number(loc.IF_images||0)+' 张</p><p class="ref-label">历史 '+E(g.loc)+' 与旧 tier 只作来源对照，不是核定位概率。</p></section>'+
     '<section class="review-section"><h4>染色质/表观遗传伙伴</h4><p>'+(g.status==='new'?(partners.length?partners.slice(0,10).map(E).join('、')+(partners.length>10?' 等 '+partners.length+' 个':''):'当前未命中本版染色质参照；不是功能阴性。'):'该蛋白不在new497重排范围，本卡不展示重排伙伴层；完整证据请打开档案。')+'</p><p class="ref-label">PPI 伙伴共 '+Number(g.ppi||0)+' 个；分子参考 '+Number(g.molecular||0)+' 个；Gene 关联 PMID '+Number(g.pubmed||0)+'。</p></section>'+
     '<section class="review-section"><h4>需要先核对的限制</h4>'+(flags.length?'<ul class="review-flags">'+flags.slice(0,4).map(function(f){return '<li>'+E(f)+'</li>'}).join('')+'</ul>':'<p class="muted">本版没有额外自动提示；仍需核对原文和实验背景。</p>')+'</section>'+
-    '<section class="review-section"><h4>你的判断</h4><p class="ref-label">497 默认接受；接受/拒绝会写入本浏览器的审查结果。拒绝不是生物学阴性。</p><div class="review-actions">'+
+    '<section class="review-section"><h4>你的判断</h4><p class="ref-label">表内保留原判断，表外按名单批量reject；你可继续人工修改，写入本浏览器。拒绝不是生物学阴性。</p><div class="review-actions">'+
      '<button class="button review-accept '+active('accept')+'" data-review-action="accept" data-gene="'+E(g.symbol)+'">✓ 接受 <kbd>A</kbd></button>'+
      '<button class="button review-reject '+active('reject')+'" data-review-action="reject" data-gene="'+E(g.symbol)+'">✗ 拒绝 <kbd>R</kbd></button>'+
      '<button class="button '+active('pending')+'" data-review-action="pending" data-gene="'+E(g.symbol)+'">待定 <kbd>S</kbd></button>'+
@@ -105,7 +106,7 @@
   if(index>=list.length&&list.length)index=list.length-1;
   const body=g?card(g):emptyHTML();
   return '<div class="review-view">'+
-   '<div class="review-head"><div><p class="eyebrow">ONE-BY-ONE REVIEW</p><h2>逐个审查 · 716 主池 / 497 人工子集</h2><p class="review-sub">497 默认全部 accept，但“已逐项确认”从 0 开始；你可以逐个接受、拒绝或标待定。219 未纳入组保留原样，不自动视为拒绝。</p></div>'+progressHTML()+'</div>'+
+   '<div class="review-head"><div><p class="eyebrow">ONE-BY-ONE REVIEW</p><h2>逐个审查 · 716主池 / 原497评分范围</h2><p class="review-sub">本次主表416名保留已有判断；表外300名已按用户指令reject。默认继续审查原497中的未决成员；批量排除与逐项人工确证分别统计。</p></div>'+progressHTML()+'</div>'+
    toolbarHTML()+body+
    '<p class="review-foot">审查结果只保存在当前浏览器（localStorage），不会写回 GitHub 或远端项目。请定期导出 JSON 备份；换浏览器/清理缓存会丢失本地状态。</p>'+
   '</div>';
@@ -133,12 +134,13 @@
   if(name==='open'){if(g)opts.onOpenGene(g.symbol,'overview');return;}
   if(name==='reset'){if(g){RS.reset(g.symbol);opts.onToast('已重置 '+g.symbol+'；笔记保留');opts.onChange();}return;}
   if(name==='resetAll'){
-   if(confirm('把所有716个蛋白重置为默认？497恢复默认接受，219恢复未纳入；笔记保留。')){RS.resetAll({keepNotes:true});index=0;opts.onChange();opts.onToast('已全部重置');}
+   if(confirm('把716个蛋白恢复本次名单默认？表外300名恢复reject，表内恢复原默认；笔记保留。')){RS.resetAll({keepNotes:true});index=0;opts.onChange();opts.onToast('已全部重置');}
    return;
   }
   if(name==='tab'){
    if(value==='all716'){scope='all';filter='all';}
    else if(value==='all497'){scope='subset';filter='all';}
+   else if(value==='reject'){scope='all';filter='reject';}
    else if(value==='not_in_subset'){scope='outside';filter='not_in_subset';}
    else{scope='subset';filter=value;}
    index=0;opts.onChange();return;

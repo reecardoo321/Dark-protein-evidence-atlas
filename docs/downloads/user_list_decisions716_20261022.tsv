@@ -1,0 +1,717 @@
+symbol	hgnc	in_primary_sheet	source_row	requested_action	historical_scope	reason
+C1orf174	HGNC:27915	no		reject	original219	用户主表名单外排除
+DCAF4L1	HGNC:27723	no		reject	original497	用户主表名单外排除
+SLC4A1AP	HGNC:13813	no		reject	original219	用户主表名单外排除
+KIAA1143	HGNC:29198	no		reject	original219	用户主表名单外排除
+PNMA8A	HGNC:25578	yes	287	preserve_existing_decision	original497	用户主表保留
+FAM9A	HGNC:18403	no		reject	original219	用户主表名单外排除
+CT45A3	HGNC:33268	yes	84	preserve_existing_decision	original497	用户主表保留
+TMEM31	HGNC:28601	no		reject	original219	用户主表名单外排除
+C9orf85	HGNC:28784	yes	38	preserve_existing_decision	original497	用户主表保留
+C1orf21	HGNC:15494	yes	16	preserve_existing_decision	original497	用户主表保留
+FAM219A	HGNC:19920	yes	163	preserve_existing_decision	original497	用户主表保留
+FOXD4L6	HGNC:31986	no		reject	original219	用户主表名单外排除
+TSPYL6	HGNC:14521	yes	381	preserve_existing_decision	original497	用户主表保留
+CCDC71	HGNC:25760	no		reject	original219	用户主表名单外排除
+CCDC82	HGNC:26282	no		reject	original219	用户主表名单外排除
+EFCAB14	HGNC:29051	yes	121	preserve_existing_decision	original497	用户主表保留
+GPATCH2L	HGNC:20210	yes	184	preserve_existing_decision	original497	用户主表保留
+RBM12B	HGNC:32310	no		reject	original219	用户主表名单外排除
+WDR86	HGNC:28020	no		reject	original219	用户主表名单外排除
+C6orf141	HGNC:21351	yes	34	preserve_existing_decision	original497	用户主表保留
+LRRC73	HGNC:21375	yes	230	preserve_existing_decision	original497	用户主表保留
+MAGIX	HGNC:30006	yes	236	preserve_existing_decision	original497	用户主表保留
+RGPD1	HGNC:32414	no		reject	original497	用户主表名单外排除
+RPL26L1	HGNC:17050	no		reject	original219	用户主表名单外排除
+PRR3	HGNC:21149	yes	296	preserve_existing_decision	original497	用户主表保留
+ARL6IP6	HGNC:24048	yes	12	preserve_existing_decision	original497	用户主表保留
+BAHCC1	HGNC:29279	no		reject	original219	用户主表名单外排除
+GPALPP1	HGNC:20298	yes	183	preserve_existing_decision	original497	用户主表保留
+MAB21L3	HGNC:26787	no		reject	original497	用户主表名单外排除
+PRELID2	HGNC:28306	yes	293	preserve_existing_decision	original497	用户主表保留
+ZDBF2	HGNC:29313	yes	405	preserve_existing_decision	original497	用户主表保留
+ERICH1	HGNC:27234	no		reject	original219	用户主表名单外排除
+HMGN4	HGNC:4989	no		reject	original219	用户主表名单外排除
+CMSS1	HGNC:28666	no		reject	original219	用户主表名单外排除
+RSRC2	HGNC:30559	yes	319	preserve_existing_decision	original497	用户主表保留
+LRRC40	HGNC:26004	no		reject	original219	用户主表名单外排除
+VCF1	HGNC:25918	yes	387	preserve_existing_decision	original497	用户主表保留
+DEPDC7	HGNC:29899	yes	107	preserve_existing_decision	original497	用户主表保留
+RFESD	HGNC:29587	yes	314	preserve_existing_decision	original497	用户主表保留
+DNAJC25	HGNC:34187	no		reject	original219	用户主表名单外排除
+FAM234A	HGNC:14163	yes	168	preserve_existing_decision	original497	用户主表保留
+ANKRD39	HGNC:28640	no		reject	original219	用户主表名单外排除
+TEX35	HGNC:25366	yes	352	preserve_existing_decision	original497	用户主表保留
+SPANXN2	HGNC:33175	no		reject	original219	用户主表名单外排除
+SPANXN3	HGNC:33176	no		reject	original219	用户主表名单外排除
+KCTD14	HGNC:23295	yes	204	preserve_existing_decision	original497	用户主表保留
+KLRG2	HGNC:24778	yes	210	preserve_existing_decision	original497	用户主表保留
+TMCO6	HGNC:28814	no		reject	original219	用户主表名单外排除
+GPATCH1	HGNC:24658	no		reject	original219	用户主表名单外排除
+FAM219B	HGNC:24695	yes	164	preserve_existing_decision	original497	用户主表保留
+NHSL2	HGNC:33737	yes	262	preserve_existing_decision	original497	用户主表保留
+SPANXN4	HGNC:33177	no		reject	original219	用户主表名单外排除
+TTC9C	HGNC:28432	no		reject	original219	用户主表名单外排除
+C8orf33	HGNC:26104	no		reject	original219	用户主表名单外排除
+TTC27	HGNC:25986	no		reject	original219	用户主表名单外排除
+SLC10A5	HGNC:22981	no		reject	original219	用户主表名单外排除
+CIMIP6	HGNC:26861	no		reject	original497	用户主表名单外排除
+FAM174A	HGNC:24943	yes	150	preserve_existing_decision	original497	用户主表保留
+DCAF4L2	HGNC:26657	no		reject	original497	用户主表名单外排除
+GOLGA8G	HGNC:25328	no		reject	original497	用户主表名单外排除
+FAM131B	HGNC:22202	yes	134	preserve_existing_decision	original497	用户主表保留
+GPATCH4	HGNC:25982	no		reject	original219	用户主表名单外排除
+FAM217B	HGNC:16170	no		reject	original219	用户主表名单外排除
+C7orf25	HGNC:21703	no		reject	original219	用户主表名单外排除
+FAM204A	HGNC:25794	no		reject	original219	用户主表名单外排除
+MTHFSD	HGNC:25778	yes	253	preserve_existing_decision	original497	用户主表保留
+PHLDB3	HGNC:30499	yes	283	preserve_existing_decision	original497	用户主表保留
+C1orf94	HGNC:28250	no		reject	original219	用户主表名单外排除
+CCDC138	HGNC:26531	no		reject	original219	用户主表名单外排除
+FAM117B	HGNC:14440	no		reject	original219	用户主表名单外排除
+R3HDM1	HGNC:9757	no		reject	original497	用户主表名单外排除
+RGPD2	HGNC:32415	no		reject	original497	用户主表名单外排除
+WDR25	HGNC:21064	yes	394	preserve_existing_decision	original497	用户主表保留
+GOLGA6A	HGNC:13567	no		reject	original497	用户主表名单外排除
+LNP1	HGNC:28014	yes	221	preserve_existing_decision	original497	用户主表保留
+NFXL1	HGNC:18726	no		reject	original219	用户主表名单外排除
+FAM90A1	HGNC:25526	no		reject	original219	用户主表名单外排除
+TMEM62	HGNC:26269	no		reject	original219	用户主表名单外排除
+TTC14	HGNC:24697	no		reject	original219	用户主表名单外排除
+LRRC31	HGNC:26261	yes	227	preserve_existing_decision	original497	用户主表保留
+PDZD9	HGNC:28740	yes	280	preserve_existing_decision	original497	用户主表保留
+ZMAT1	HGNC:29377	yes	408	preserve_existing_decision	original497	用户主表保留
+ARMCX4	HGNC:28615	yes	13	preserve_existing_decision	original497	用户主表保留
+SHE	HGNC:27004	yes	333	preserve_existing_decision	original497	用户主表保留
+PRR22	HGNC:28354	yes	298	preserve_existing_decision	original497	用户主表保留
+ANKRD35	HGNC:26323	no		reject	original219	用户主表名单外排除
+C1orf216	HGNC:26800	no		reject	original219	用户主表名单外排除
+PABIR2	HGNC:30490	no		reject	original497	用户主表名单外排除
+PLEKHO2	HGNC:30026	yes	285	preserve_existing_decision	original497	用户主表保留
+SSBP4	HGNC:15676	yes	345	preserve_existing_decision	original497	用户主表保留
+SCRN2	HGNC:30381	yes	327	preserve_existing_decision	original497	用户主表保留
+DMRTB1	HGNC:13913	yes	108	preserve_existing_decision	original497	用户主表保留
+POTEJ	HGNC:37094	yes	289	preserve_existing_decision	original497	用户主表保留
+CCDC175	HGNC:19847	no		reject	original219	用户主表名单外排除
+FAM133B	HGNC:28629	no		reject	original219	用户主表名单外排除
+FAM9C	HGNC:18405	no		reject	original219	用户主表名单外排除
+R3HDM2	HGNC:29167	no		reject	original497	用户主表名单外排除
+FAM193B	HGNC:25524	no		reject	original219	用户主表名单外排除
+SNURF	HGNC:11171	no		reject	original219	用户主表名单外排除
+TMEM51	HGNC:25488	yes	367	preserve_existing_decision	original497	用户主表保留
+FAM163B	HGNC:33277	yes	147	preserve_existing_decision	original497	用户主表保留
+RGPD3	HGNC:32416	no		reject	original497	用户主表名单外排除
+RGPD4	HGNC:32417	no		reject	original497	用户主表名单外排除
+FAM117A	HGNC:24179	yes	132	preserve_existing_decision	original497	用户主表保留
+BEND7	HGNC:23514	no		reject	original219	用户主表名单外排除
+NOP9	HGNC:19826	no		reject	original219	用户主表名单外排除
+CCDC77	HGNC:28203	no		reject	original219	用户主表名单外排除
+ZMYM1	HGNC:26253	no		reject	original219	用户主表名单外排除
+CRYBG2	HGNC:17295	yes	82	preserve_existing_decision	original497	用户主表保留
+ANKRD36B	HGNC:29333	no		reject	original219	用户主表名单外排除
+FNDC11	HGNC:28764	yes	174	preserve_existing_decision	original497	用户主表保留
+KIAA0408	HGNC:21636	yes	206	preserve_existing_decision	original497	用户主表保留
+FLYWCH2	HGNC:25178	yes	173	preserve_existing_decision	original497	用户主表保留
+FAM124A	HGNC:26413	no		reject	original219	用户主表名单外排除
+TSTD2	HGNC:30087	yes	382	preserve_existing_decision	original497	用户主表保留
+C19orf47	HGNC:26723	no		reject	original219	用户主表名单外排除
+LCA5L	HGNC:1255	yes	213	preserve_existing_decision	original497	用户主表保留
+ANKRD36	HGNC:24079	no		reject	original219	用户主表名单外排除
+CCDC149	HGNC:25405	no		reject	original219	用户主表名单外排除
+KLHL32	HGNC:21221	no		reject	original497	用户主表名单外排除
+TMA7	HGNC:26932	yes	362	preserve_existing_decision	original497	用户主表保留
+ZNF474	HGNC:23245	yes	411	preserve_existing_decision	original497	用户主表保留
+TCEANC	HGNC:28277	no		reject	original497	用户主表名单外排除
+C8orf48	HGNC:26345	yes	35	preserve_existing_decision	original497	用户主表保留
+MSANTD3	HGNC:23370	yes	251	preserve_existing_decision	original497	用户主表保留
+TMEM255A	HGNC:26086	no		reject	original219	用户主表名单外排除
+MAGEB10	HGNC:25377	no		reject	original497	用户主表名单外排除
+C2CD2	HGNC:1266	yes	18	preserve_existing_decision	original497	用户主表保留
+LDLRAD1	HGNC:32069	yes	214	preserve_existing_decision	original497	用户主表保留
+FAM53C	HGNC:1336	yes	129	preserve_existing_decision	original497	用户主表保留
+CLIP4	HGNC:26108	no		reject	original497	用户主表名单外排除
+PRRG1	HGNC:9469	yes	307	preserve_existing_decision	original497	用户主表保留
+TMEM92	HGNC:26579	no		reject	original219	用户主表名单外排除
+C11orf58	HGNC:16990	yes	43	preserve_existing_decision	original497	用户主表保留
+LENG1	HGNC:15502	no		reject	original219	用户主表名单外排除
+RWDD2B	HGNC:1302	yes	322	preserve_existing_decision	original497	用户主表保留
+ZRSR2P1	HGNC:12456	yes	418	preserve_existing_decision	original497	用户主表保留
+LONRF3	HGNC:21152	no		reject	original497	用户主表名单外排除
+FAM184A	HGNC:20991	yes	154	preserve_existing_decision	original497	用户主表保留
+C1orf52	HGNC:24871	no		reject	original219	用户主表名单外排除
+EFCAB13	HGNC:26864	yes	120	preserve_existing_decision	original497	用户主表保留
+LRRC42	HGNC:28792	yes	228	preserve_existing_decision	original497	用户主表保留
+THAP8	HGNC:23191	yes	357	preserve_existing_decision	original497	用户主表保留
+TMEM179B	HGNC:33744	no		reject	original219	用户主表名单外排除
+TMEM72	HGNC:31658	no		reject	original219	用户主表名单外排除
+ZBED8	HGNC:30804	no		reject	original219	用户主表名单外排除
+RBM18	HGNC:28413	no		reject	original219	用户主表名单外排除
+SH3BGRL2	HGNC:15567	yes	331	preserve_existing_decision	original497	用户主表保留
+FAM169A	HGNC:29138	no		reject	original219	用户主表名单外排除
+NOAZFP	HGNC:15462	yes	264	preserve_existing_decision	original497	用户主表保留
+NUP210L	HGNC:29915	no		reject	original219	用户主表名单外排除
+TPRG1	HGNC:24759	yes	373	preserve_existing_decision	original497	用户主表保留
+WDR27	HGNC:21248	yes	395	preserve_existing_decision	original497	用户主表保留
+C2orf42	HGNC:26056	no		reject	original219	用户主表名单外排除
+CT45A10	HGNC:51263	yes	90	preserve_existing_decision	original497	用户主表保留
+ERICH6	HGNC:28602	no		reject	original219	用户主表名单外排除
+OGFOD2	HGNC:25823	yes	272	preserve_existing_decision	original497	用户主表保留
+PGBDF	HGNC:29581	no		reject	original219	用户主表名单外排除
+ANKEF1	HGNC:15803	yes	11	preserve_existing_decision	original497	用户主表保留
+ANKRD29	HGNC:27110	no		reject	original219	用户主表名单外排除
+ANKRD40	HGNC:28233	no		reject	original219	用户主表名单外排除
+ARMCX5	HGNC:25772	yes	14	preserve_existing_decision	original497	用户主表保留
+C1orf226	HGNC:34351	no		reject	original219	用户主表名单外排除
+C5orf22	HGNC:25639	no		reject	original219	用户主表名单外排除
+C9orf40	HGNC:23433	no		reject	original219	用户主表名单外排除
+CAPSL	HGNC:28375	no		reject	original497	用户主表名单外排除
+CCDC102A	HGNC:28097	no		reject	original219	用户主表名单外排除
+CCDC107	HGNC:28465	no		reject	original219	用户主表名单外排除
+CCDC183	HGNC:28236	no		reject	original219	用户主表名单外排除
+CCDC28A	HGNC:21098	no		reject	original219	用户主表名单外排除
+CCDC74A	HGNC:25197	no		reject	original219	用户主表名单外排除
+CCDC74B	HGNC:25267	no		reject	original219	用户主表名单外排除
+CCDC9B	HGNC:33488	no		reject	original219	用户主表名单外排除
+CCNI2	HGNC:33869	no		reject	original497	用户主表名单外排除
+CCNJL	HGNC:25876	no		reject	original497	用户主表名单外排除
+CDPF1	HGNC:33710	yes	59	preserve_existing_decision	original497	用户主表保留
+DIPK1A	HGNC:32213	no		reject	original497	用户主表名单外排除
+DRICH1	HGNC:28031	yes	112	preserve_existing_decision	original497	用户主表保留
+ERICH5	HGNC:26823	no		reject	original219	用户主表名单外排除
+EVA1B	HGNC:25558	yes	126	preserve_existing_decision	original497	用户主表保留
+FAM135A	HGNC:21084	yes	136	preserve_existing_decision	original497	用户主表保留
+FAM171B	HGNC:29412	no		reject	original219	用户主表名单外排除
+FAM199X	HGNC:25195	yes	161	preserve_existing_decision	original497	用户主表保留
+FAM227B	HGNC:26543	no		reject	original219	用户主表名单外排除
+GINM1	HGNC:21074	yes	180	preserve_existing_decision	original497	用户主表保留
+GRAMD2B	HGNC:24911	yes	185	preserve_existing_decision	original497	用户主表保留
+IFFO2	HGNC:27006	yes	195	preserve_existing_decision	original497	用户主表保留
+ISM2	HGNC:23176	yes	199	preserve_existing_decision	original497	用户主表保留
+KLHL38	HGNC:34435	no		reject	original497	用户主表名单外排除
+KRABD3	HGNC:22228	no		reject	original497	用户主表名单外排除
+KRABD4	HGNC:26007	no		reject	original497	用户主表名单外排除
+KRTCAP3	HGNC:28943	yes	211	preserve_existing_decision	original497	用户主表保留
+LBHD1	HGNC:28351	no		reject	original219	用户主表名单外排除
+LONRF2	HGNC:24788	no		reject	original497	用户主表名单外排除
+LRRC20	HGNC:23421	yes	225	preserve_existing_decision	original497	用户主表保留
+LRRC61	HGNC:21704	yes	229	preserve_existing_decision	original497	用户主表保留
+LRRN4CL	HGNC:33724	yes	233	preserve_existing_decision	original497	用户主表保留
+LURAP1L	HGNC:31452	yes	234	preserve_existing_decision	original497	用户主表保留
+MTMR10	HGNC:25999	yes	254	preserve_existing_decision	original497	用户主表保留
+NUTM2F	HGNC:23450	yes	269	preserve_existing_decision	original497	用户主表保留
+NXPE3	HGNC:28238	no		reject	original497	用户主表名单外排除
+NYNRIN	HGNC:20165	no		reject	original219	用户主表名单外排除
+PCED1A	HGNC:16212	yes	278	preserve_existing_decision	original497	用户主表保留
+PLAC8L1	HGNC:31746	yes	284	preserve_existing_decision	original497	用户主表保留
+RFPL2	HGNC:9979	yes	315	preserve_existing_decision	original497	用户主表保留
+SPRYD3	HGNC:25920	yes	344	preserve_existing_decision	original497	用户主表保留
+SUSD1	HGNC:25413	yes	347	preserve_existing_decision	original497	用户主表保留
+SZRD1	HGNC:30232	yes	348	preserve_existing_decision	original497	用户主表保留
+TCEANC2	HGNC:26494	no		reject	original497	用户主表名单外排除
+TEX9	HGNC:29585	yes	350	preserve_existing_decision	original497	用户主表保留
+THNSL1	HGNC:26160	yes	359	preserve_existing_decision	original497	用户主表保留
+TIGD3	HGNC:18334	yes	65	preserve_existing_decision	original497	用户主表保留
+TIGD6	HGNC:18332	yes	68	preserve_existing_decision	original497	用户主表保留
+TM2D2	HGNC:24127	no		reject	original219	用户主表名单外排除
+TMEM143	HGNC:25603	no		reject	original219	用户主表名单外排除
+TMEM154	HGNC:26489	no		reject	original219	用户主表名单外排除
+TMEM183A	HGNC:20173	no		reject	original219	用户主表名单外排除
+TMEM35B	HGNC:40021	yes	366	preserve_existing_decision	original497	用户主表保留
+TTC13	HGNC:26204	no		reject	original219	用户主表名单外排除
+ZC2HC1C	HGNC:20354	yes	401	preserve_existing_decision	original497	用户主表保留
+ZNF428	HGNC:20804	yes	410	preserve_existing_decision	original497	用户主表保留
+ZNF843	HGNC:28710	yes	415	preserve_existing_decision	original497	用户主表保留
+AMMECR1L	HGNC:28658	no		reject	original219	用户主表名单外排除
+C11orf71	HGNC:25937	no		reject	original219	用户主表名单外排除
+C14orf93	HGNC:20162	no		reject	original219	用户主表名单外排除
+C1orf162	HGNC:28344	yes	17	preserve_existing_decision	original497	用户主表保留
+CCDC122	HGNC:26478	no		reject	original219	用户主表名单外排除
+CCDC83	HGNC:28535	no		reject	original219	用户主表名单外排除
+CEBPZOS	HGNC:49288	yes	61	preserve_existing_decision	original497	用户主表保留
+CIMAP1D	HGNC:26841	no		reject	original497	用户主表名单外排除
+DBNDD1	HGNC:28455	yes	106	preserve_existing_decision	original497	用户主表保留
+EPB41L4A	HGNC:13278	yes	124	preserve_existing_decision	original497	用户主表保留
+JRKL	HGNC:6200	yes	63	preserve_existing_decision	original497	用户主表保留
+OGFOD3	HGNC:26174	yes	273	preserve_existing_decision	original497	用户主表保留
+OXNAD1	HGNC:25128	yes	274	preserve_existing_decision	original497	用户主表保留
+SPATA2L	HGNC:28393	yes	337	preserve_existing_decision	original497	用户主表保留
+TMEM255B	HGNC:28297	no		reject	original219	用户主表名单外排除
+TSLIG3C	HGNC:27119	yes	379	preserve_existing_decision	original497	用户主表保留
+ZCCHC2	HGNC:22916	yes	403	preserve_existing_decision	original497	用户主表保留
+ZSWIM9	HGNC:34495	yes	421	preserve_existing_decision	original497	用户主表保留
+C15orf40	HGNC:28443	yes	46	preserve_existing_decision	original497	用户主表保留
+C22orf31	HGNC:26931	no		reject	original219	用户主表名单外排除
+CXorf58	HGNC:26356	no		reject	original219	用户主表名单外排除
+DIPK1B	HGNC:28290	no		reject	original497	用户主表名单外排除
+EXOC3L2	HGNC:30162	yes	128	preserve_existing_decision	original497	用户主表保留
+FAM13C	HGNC:19371	no		reject	original219	用户主表名单外排除
+FAM181A	HGNC:20491	no		reject	original219	用户主表名单外排除
+LENG9	HGNC:16306	yes	216	preserve_existing_decision	original497	用户主表保留
+MAB21L4	HGNC:26216	no		reject	original497	用户主表名单外排除
+MAMDC2	HGNC:23673	yes	237	preserve_existing_decision	original497	用户主表保留
+MSANTD4	HGNC:29383	yes	252	preserve_existing_decision	original497	用户主表保留
+PRR36	HGNC:26172	yes	306	preserve_existing_decision	original497	用户主表保留
+RIPOR3	HGNC:16168	yes	317	preserve_existing_decision	original497	用户主表保留
+SETD9	HGNC:28508	yes	329	preserve_existing_decision	original497	用户主表保留
+TMEM267	HGNC:26139	no		reject	original219	用户主表名单外排除
+TMPPE	HGNC:33865	no		reject	original219	用户主表名单外排除
+TOR4A	HGNC:25981	yes	372	preserve_existing_decision	original497	用户主表保留
+TTC31	HGNC:25759	no		reject	original219	用户主表名单外排除
+VWA3B	HGNC:28385	yes	391	preserve_existing_decision	original497	用户主表保留
+ANKAR	HGNC:26350	no		reject	original497	用户主表名单外排除
+ANKRD36C	HGNC:32946	no		reject	original219	用户主表名单外排除
+BRD10	HGNC:23378	no		reject	original219	用户主表名单外排除
+C10orf62	HGNC:23294	yes	40	preserve_existing_decision	original497	用户主表保留
+C11orf68	HGNC:28801	yes	44	preserve_existing_decision	original497	用户主表保留
+C15orf61	HGNC:34453	yes	47	preserve_existing_decision	original497	用户主表保留
+C1orf159	HGNC:26062	no		reject	original219	用户主表名单外排除
+C8orf82	HGNC:33826	yes	37	preserve_existing_decision	original497	用户主表保留
+CCDC171	HGNC:29828	no		reject	original219	用户主表名单外排除
+EEIG2	HGNC:27637	yes	117	preserve_existing_decision	original497	用户主表保留
+EFCC1	HGNC:25692	yes	122	preserve_existing_decision	original497	用户主表保留
+FAM186A	HGNC:26980	yes	157	preserve_existing_decision	original497	用户主表保留
+FAM76A	HGNC:28530	no		reject	original219	用户主表名单外排除
+KRABD2	HGNC:26989	no		reject	original497	用户主表名单外排除
+MNMIP1	HGNC:26236	yes	246	preserve_existing_decision	original497	用户主表保留
+MROH6	HGNC:27814	yes	248	preserve_existing_decision	original497	用户主表保留
+NEMP2	HGNC:33700	yes	260	preserve_existing_decision	original497	用户主表保留
+PCP4L1	HGNC:20448	yes	279	preserve_existing_decision	original497	用户主表保留
+R3HCC1	HGNC:27329	no		reject	original497	用户主表名单外排除
+RBBP8NL	HGNC:16144	yes	311	preserve_existing_decision	original497	用户主表保留
+SH3TC1	HGNC:26009	yes	332	preserve_existing_decision	original497	用户主表保留
+SP140L	HGNC:25105	no		reject	original219	用户主表名单外排除
+SPATA31H1	HGNC:25275	yes	339	preserve_existing_decision	original497	用户主表保留
+TBC1D28	HGNC:26858	yes	349	preserve_existing_decision	original497	用户主表保留
+TIGD2	HGNC:18333	yes	64	preserve_existing_decision	original497	用户主表保留
+TIGD4	HGNC:18335	yes	66	preserve_existing_decision	original497	用户主表保留
+TMEM252	HGNC:28537	yes	370	preserve_existing_decision	original497	用户主表保留
+TTC39C	HGNC:26595	no		reject	original219	用户主表名单外排除
+UBE2NL	HGNC:31710	no		reject	original219	用户主表名单外排除
+UMAD1	HGNC:48955	yes	386	preserve_existing_decision	original497	用户主表保留
+WDR17	HGNC:16661	yes	393	preserve_existing_decision	original497	用户主表保留
+WDR88	HGNC:26999	yes	397	preserve_existing_decision	original497	用户主表保留
+ZC3H6	HGNC:24762	yes	402	preserve_existing_decision	original497	用户主表保留
+C11orf24	HGNC:1174	yes	41	preserve_existing_decision	original497	用户主表保留
+C19orf73	HGNC:25534	yes	51	preserve_existing_decision	original497	用户主表保留
+CCDC150	HGNC:26834	no		reject	original219	用户主表名单外排除
+CCDC152	HGNC:34438	no		reject	original219	用户主表名单外排除
+CCDC169	HGNC:34361	no		reject	original219	用户主表名单外排除
+CCDC24	HGNC:28688	no		reject	original219	用户主表名单外排除
+CCDC27	HGNC:26546	no		reject	original219	用户主表名单外排除
+CLHC1	HGNC:26453	yes	77	preserve_existing_decision	original497	用户主表保留
+EFCAB12	HGNC:28061	yes	119	preserve_existing_decision	original497	用户主表保留
+ERICH2	HGNC:44395	no		reject	original219	用户主表名单外排除
+EVPLL	HGNC:35236	yes	127	preserve_existing_decision	original497	用户主表保留
+FAM131A	HGNC:28308	no		reject	original219	用户主表名单外排除
+FAM131C	HGNC:26717	yes	135	preserve_existing_decision	original497	用户主表保留
+FAM178B	HGNC:28036	no		reject	original219	用户主表名单外排除
+FAM186B	HGNC:25296	yes	158	preserve_existing_decision	original497	用户主表保留
+FAM228A	HGNC:34418	no		reject	original219	用户主表名单外排除
+FBXO48	HGNC:33857	yes	170	preserve_existing_decision	original497	用户主表保留
+GARNL3	HGNC:25425	yes	177	preserve_existing_decision	original497	用户主表保留
+GOLGA6B	HGNC:32205	no		reject	original497	用户主表名单外排除
+GOLGA6C	HGNC:32206	no		reject	original497	用户主表名单外排除
+HMGXB3	HGNC:28982	no		reject	original219	用户主表名单外排除
+KIAA1549L	HGNC:24836	yes	207	preserve_existing_decision	original497	用户主表保留
+KLHDC7A	HGNC:26791	no		reject	original497	用户主表名单外排除
+LEKR1	HGNC:33765	yes	215	preserve_existing_decision	original497	用户主表保留
+LMNTD1	HGNC:26683	yes	219	preserve_existing_decision	original497	用户主表保留
+LRRC10B	HGNC:37215	yes	223	preserve_existing_decision	original497	用户主表保留
+LRRC9	HGNC:19848	yes	222	preserve_existing_decision	original497	用户主表保留
+MROH8	HGNC:16125	yes	249	preserve_existing_decision	original497	用户主表保留
+NBPF3	HGNC:25076	yes	257	preserve_existing_decision	original497	用户主表保留
+NUTM2A	HGNC:23438	yes	265	preserve_existing_decision	original497	用户主表保留
+NUTM2B	HGNC:23445	yes	266	preserve_existing_decision	original497	用户主表保留
+PACRGL	HGNC:28442	yes	275	preserve_existing_decision	original497	用户主表保留
+PAGE3	HGNC:4110	yes	276	preserve_existing_decision	original497	用户主表保留
+PRR32	HGNC:34498	yes	304	preserve_existing_decision	original497	用户主表保留
+R3HDM4	HGNC:28270	no		reject	original497	用户主表名单外排除
+RNF44	HGNC:19180	yes	318	preserve_existing_decision	original497	用户主表保留
+SAMD10	HGNC:16129	yes	323	preserve_existing_decision	original497	用户主表保留
+TEX55	HGNC:26553	yes	354	preserve_existing_decision	original497	用户主表保留
+THSD7B	HGNC:29348	yes	360	preserve_existing_decision	original497	用户主表保留
+TMEM178B	HGNC:44112	no		reject	original219	用户主表名单外排除
+TMEM187	HGNC:13705	no		reject	original219	用户主表名单外排除
+TOGARAM2	HGNC:33715	yes	371	preserve_existing_decision	original497	用户主表保留
+TRIM51	HGNC:19023	yes	376	preserve_existing_decision	original497	用户主表保留
+TTC24	HGNC:32348	no		reject	original219	用户主表名单外排除
+WDSUB1	HGNC:26697	yes	398	preserve_existing_decision	original497	用户主表保留
+ZBED5	HGNC:30803	no		reject	original219	用户主表名单外排除
+ZNF839	HGNC:20345	yes	414	preserve_existing_decision	original497	用户主表保留
+ZNF853	HGNC:21767	yes	416	preserve_existing_decision	original497	用户主表保留
+ZSWIM3	HGNC:16157	yes	419	preserve_existing_decision	original497	用户主表保留
+CHIC1	HGNC:1934	yes	73	preserve_existing_decision	original497	用户主表保留
+FAM174C	HGNC:26073	yes	151	preserve_existing_decision	original497	用户主表保留
+TMEM69	HGNC:28035	no		reject	original219	用户主表名单外排除
+LRRC14B	HGNC:37268	yes	224	preserve_existing_decision	original497	用户主表保留
+ANP32D	HGNC:16676	no		reject	original497	用户主表名单外排除
+C9orf152	HGNC:31455	no		reject	original219	用户主表名单外排除
+FOXD4L3	HGNC:18523	no		reject	original219	用户主表名单外排除
+HSBP1L1	HGNC:37243	yes	192	preserve_existing_decision	original497	用户主表保留
+NBPF6	HGNC:31988	yes	259	preserve_existing_decision	original497	用户主表保留
+PRR35	HGNC:14139	yes	305	preserve_existing_decision	original497	用户主表保留
+RIIAD1	HGNC:26686	yes	316	preserve_existing_decision	original497	用户主表保留
+SMIM19	HGNC:25166	no		reject	original497	用户主表名单外排除
+ZSWIM5	HGNC:29299	yes	420	preserve_existing_decision	original497	用户主表保留
+ANKDD1A	HGNC:28002	no		reject	original497	用户主表名单外排除
+ANKRD10	HGNC:20265	no		reject	original219	用户主表名单外排除
+ANKRD20A1	HGNC:23665	no		reject	original219	用户主表名单外排除
+C19orf44	HGNC:26141	yes	50	preserve_existing_decision	original497	用户主表保留
+C2orf68	HGNC:34353	no		reject	original219	用户主表名单外排除
+DUX3	HGNC:3081	yes	114	preserve_existing_decision	original497	用户主表保留
+FAM81B	HGNC:26335	yes	130	preserve_existing_decision	original497	用户主表保留
+FDXACB1	HGNC:25110	yes	172	preserve_existing_decision	original497	用户主表保留
+KLHL23	HGNC:27506	no		reject	original497	用户主表名单外排除
+LRRC27	HGNC:29346	no		reject	original219	用户主表名单外排除
+LRRC28	HGNC:28355	yes	226	preserve_existing_decision	original497	用户主表保留
+LYSMD2	HGNC:28571	yes	235	preserve_existing_decision	original497	用户主表保留
+PLPPR2	HGNC:29566	yes	286	preserve_existing_decision	original497	用户主表保留
+PRICKLE4	HGNC:16805	yes	294	preserve_existing_decision	original497	用户主表保留
+REXO5	HGNC:24661	yes	313	preserve_existing_decision	original497	用户主表保留
+RUSF1	HGNC:25848	yes	321	preserve_existing_decision	original497	用户主表保留
+SLC67A2	HGNC:28158	no		reject	original219	用户主表名单外排除
+SOWAHB	HGNC:32958	no		reject	original497	用户主表名单外排除
+SPRYD4	HGNC:27468	no		reject	original219	用户主表名单外排除
+THAP10	HGNC:23193	yes	358	preserve_existing_decision	original497	用户主表保留
+TIGD5	HGNC:18336	yes	67	preserve_existing_decision	original497	用户主表保留
+TSPYL4	HGNC:21559	yes	380	preserve_existing_decision	original497	用户主表保留
+VPS9D1	HGNC:13526	yes	389	preserve_existing_decision	original497	用户主表保留
+VWA5B2	HGNC:25144	yes	392	preserve_existing_decision	original497	用户主表保留
+ZHX1-C8orf76	HGNC:42975	yes	407	preserve_existing_decision	original497	用户主表保留
+ZNF385C	HGNC:33722	yes	409	preserve_existing_decision	original497	用户主表保留
+C21orf58	HGNC:1300	yes	54	preserve_existing_decision	original497	用户主表保留
+C8orf74	HGNC:32296	yes	36	preserve_existing_decision	original497	用户主表保留
+CNPPD1	HGNC:25220	yes	78	preserve_existing_decision	original497	用户主表保留
+GTSF1L	HGNC:16198	yes	187	preserve_existing_decision	original497	用户主表保留
+POMZP3	HGNC:9203	yes	288	preserve_existing_decision	original497	用户主表保留
+TIGD7	HGNC:18331	yes	69	preserve_existing_decision	original497	用户主表保留
+ANKRD30B	HGNC:24165	no		reject	original219	用户主表名单外排除
+C5orf46	HGNC:33768	yes	28	preserve_existing_decision	original497	用户主表保留
+GVINP1	HGNC:25813	yes	188	preserve_existing_decision	original497	用户主表保留
+HDHD3	HGNC:28171	yes	190	preserve_existing_decision	original497	用户主表保留
+MAGEB3	HGNC:6810	no		reject	original497	用户主表名单外排除
+REXO1L1P	HGNC:24660	yes	312	preserve_existing_decision	original497	用户主表保留
+THAP6	HGNC:23189	yes	356	preserve_existing_decision	original497	用户主表保留
+USP17L7	HGNC:37180	no		reject	original497	用户主表名单外排除
+FAM229B	HGNC:33858	yes	167	preserve_existing_decision	original497	用户主表保留
+FAM78A	HGNC:25465	no		reject	original219	用户主表名单外排除
+KANSL1L	HGNC:26310	yes	202	preserve_existing_decision	original497	用户主表保留
+KBTBD3	HGNC:22934	yes	203	preserve_existing_decision	original497	用户主表保留
+KRABD5	HGNC:26987	no		reject	original497	用户主表名单外排除
+LRRIQ3	HGNC:28318	yes	232	preserve_existing_decision	original497	用户主表保留
+LYSMD1	HGNC:32070	no		reject	original219	用户主表名单外排除
+MAGEB6	HGNC:23796	no		reject	original497	用户主表名单外排除
+MAGEE2	HGNC:24935	no		reject	original497	用户主表名单外排除
+MANBAL	HGNC:15799	yes	238	preserve_existing_decision	original497	用户主表保留
+MEGF9	HGNC:3234	yes	243	preserve_existing_decision	original497	用户主表保留
+METTL25B	HGNC:24273	yes	244	preserve_existing_decision	original497	用户主表保留
+MIX23	HGNC:31136	yes	245	preserve_existing_decision	original497	用户主表保留
+PABIR3	HGNC:25202	no		reject	original497	用户主表名单外排除
+PRRT3	HGNC:26591	yes	308	preserve_existing_decision	original497	用户主表保留
+TTC32	HGNC:32954	no		reject	original219	用户主表名单外排除
+ABHD12B	HGNC:19837	yes	8	preserve_existing_decision	original497	用户主表保留
+ANKRD7	HGNC:18588	no		reject	original219	用户主表名单外排除
+C16orf78	HGNC:28479	no		reject	original219	用户主表名单外排除
+C2orf78	HGNC:34349	no		reject	original219	用户主表名单外排除
+C4orf33	HGNC:27025	yes	24	preserve_existing_decision	original497	用户主表保留
+C4orf54	HGNC:27741	yes	26	preserve_existing_decision	original497	用户主表保留
+CC2D2B	HGNC:31666	yes	58	preserve_existing_decision	original497	用户主表保留
+CLDND2	HGNC:28511	yes	75	preserve_existing_decision	original497	用户主表保留
+EFCAB5	HGNC:24801	yes	118	preserve_existing_decision	original497	用户主表保留
+GRAPL	HGNC:37240	yes	186	preserve_existing_decision	original497	用户主表保留
+GVQW3	HGNC:51239	yes	189	preserve_existing_decision	original497	用户主表保留
+NANOGNB	HGNC:24958	yes	256	preserve_existing_decision	original497	用户主表保留
+PHF24	HGNC:29180	yes	282	preserve_existing_decision	original497	用户主表保留
+PP2D1	HGNC:28406	yes	290	preserve_existing_decision	original497	用户主表保留
+RNF113B	HGNC:17267	no		reject	original219	用户主表名单外排除
+TMEM190	HGNC:29632	no		reject	original219	用户主表名单外排除
+TMEM42	HGNC:28444	no		reject	original219	用户主表名单外排除
+ZNF804B	HGNC:21958	yes	412	preserve_existing_decision	original497	用户主表保留
+PRAMEF12	HGNC:22125	yes	292	preserve_existing_decision	original497	用户主表保留
+HNRNPA1L3	HGNC:48778	no		reject	original219	用户主表名单外排除
+IGDCC3	HGNC:9700	yes	196	preserve_existing_decision	original497	用户主表保留
+LMNTD2	HGNC:28561	yes	220	preserve_existing_decision	original497	用户主表保留
+PRR23B	HGNC:33764	yes	300	preserve_existing_decision	original497	用户主表保留
+PTGES3L	HGNC:43943	yes	310	preserve_existing_decision	original497	用户主表保留
+SMIM2	HGNC:28776	no		reject	original497	用户主表名单外排除
+TMCO2	HGNC:23312	yes	364	preserve_existing_decision	original497	用户主表保留
+TMCO5A	HGNC:28558	yes	365	preserve_existing_decision	original497	用户主表保留
+BRICD5	HGNC:28309	no		reject	original219	用户主表名单外排除
+C20orf96	HGNC:16227	no		reject	original219	用户主表名单外排除
+C22orf15	HGNC:15558	yes	55	preserve_existing_decision	original497	用户主表保留
+C5orf34	HGNC:24738	yes	27	preserve_existing_decision	original497	用户主表保留
+C6orf118	HGNC:21233	yes	31	preserve_existing_decision	original497	用户主表保留
+FAM120AOS	HGNC:23389	yes	133	preserve_existing_decision	original497	用户主表保留
+FAM153A	HGNC:29940	yes	140	preserve_existing_decision	original497	用户主表保留
+FAM153B	HGNC:27323	yes	141	preserve_existing_decision	original497	用户主表保留
+FAM171A2	HGNC:30480	yes	149	preserve_existing_decision	original497	用户主表保留
+FAM187B	HGNC:26366	yes	160	preserve_existing_decision	original497	用户主表保留
+FAM216A	HGNC:30180	yes	162	preserve_existing_decision	original497	用户主表保留
+FAM222A	HGNC:25915	yes	166	preserve_existing_decision	original497	用户主表保留
+NUP62CL	HGNC:25960	no		reject	original219	用户主表名单外排除
+C22orf42	HGNC:27160	yes	56	preserve_existing_decision	original497	用户主表保留
+CIMIP5	HGNC:26324	no		reject	original497	用户主表名单外排除
+FAM149C	HGNC:25320	yes	138	preserve_existing_decision	original497	用户主表保留
+FAM153CP	HGNC:33936	yes	142	preserve_existing_decision	original497	用户主表保留
+C6orf136	HGNC:21301	yes	33	preserve_existing_decision	original497	用户主表保留
+GLT1D1	HGNC:26483	yes	181	preserve_existing_decision	original497	用户主表保留
+C6orf132	HGNC:21288	yes	32	preserve_existing_decision	original497	用户主表保留
+CFAP119	HGNC:28078	yes	72	preserve_existing_decision	original497	用户主表保留
+CFAP96	HGNC:34346	yes	70	preserve_existing_decision	original497	用户主表保留
+CTAGE6	HGNC:28644	yes	105	preserve_existing_decision	original497	用户主表保留
+DNAJC4	HGNC:5271	no		reject	original219	用户主表名单外排除
+FAM185A	HGNC:22412	yes	156	preserve_existing_decision	original497	用户主表保留
+FAM221A	HGNC:27977	yes	165	preserve_existing_decision	original497	用户主表保留
+GOLGA8R	HGNC:44407	no		reject	original497	用户主表名单外排除
+NXPE2	HGNC:26331	yes	271	preserve_existing_decision	original497	用户主表保留
+C2CD4C	HGNC:29417	yes	19	preserve_existing_decision	original497	用户主表保留
+CCDC17	HGNC:26574	no		reject	original219	用户主表名单外排除
+CCDC81	HGNC:26281	no		reject	original219	用户主表名单外排除
+FAM151A	HGNC:25032	yes	139	preserve_existing_decision	original497	用户主表保留
+FAM184B	HGNC:29235	yes	155	preserve_existing_decision	original497	用户主表保留
+GOLGA8F	HGNC:32378	no		reject	original497	用户主表名单外排除
+GOLGA8O	HGNC:44406	no		reject	original497	用户主表名单外排除
+SIRAL2	HGNC:1313	yes	334	preserve_existing_decision	original497	用户主表保留
+SPATA31J1	HGNC:27753	yes	340	preserve_existing_decision	original497	用户主表保留
+ZBED8L	HGNC:25401	no		reject	original219	用户主表名单外排除
+AARD	HGNC:33842	yes	7	preserve_existing_decision	original497	用户主表保留
+C20orf202	HGNC:37254	yes	53	preserve_existing_decision	original497	用户主表保留
+FAM187A	HGNC:35153	yes	159	preserve_existing_decision	original497	用户主表保留
+SPMIP2	HGNC:26342	yes	342	preserve_existing_decision	original497	用户主表保留
+ACOXL	HGNC:25621	yes	9	preserve_existing_decision	original497	用户主表保留
+SEL1L2	HGNC:15897	yes	328	preserve_existing_decision	original497	用户主表保留
+GLTPD2	HGNC:33756	yes	182	preserve_existing_decision	original497	用户主表保留
+XNDC1N	HGNC:54661	yes	399	preserve_existing_decision	original497	用户主表保留
+YPEL4	HGNC:18328	yes	400	preserve_existing_decision	original497	用户主表保留
+MAGEB16	HGNC:21188	no		reject	original497	用户主表名单外排除
+TRIM61	HGNC:24339	yes	378	preserve_existing_decision	original497	用户主表保留
+ZNF728	HGNC:32463	no		reject	original219	用户主表名单外排除
+ZNF880	HGNC:37249	yes	417	preserve_existing_decision	original497	用户主表保留
+FAM90A26	HGNC:43746	no		reject	original219	用户主表名单外排除
+FAM90A5	HGNC:32253	no		reject	original219	用户主表名单外排除
+WDR31	HGNC:21421	yes	396	preserve_existing_decision	original497	用户主表保留
+ANKRD65	HGNC:42950	no		reject	original219	用户主表名单外排除
+C6orf52	HGNC:20881	yes	30	preserve_existing_decision	original497	用户主表保留
+CAPS2	HGNC:16471	no		reject	original497	用户主表名单外排除
+CRIP3	HGNC:17751	yes	81	preserve_existing_decision	original497	用户主表保留
+ERFL	HGNC:53894	yes	125	preserve_existing_decision	original497	用户主表保留
+FOXD4L5	HGNC:18522	no		reject	original219	用户主表名单外排除
+NBPF4	HGNC:26550	yes	258	preserve_existing_decision	original497	用户主表保留
+NKPD1	HGNC:24739	yes	263	preserve_existing_decision	original497	用户主表保留
+NUTM2D	HGNC:23447	yes	267	preserve_existing_decision	original497	用户主表保留
+NUTM2E	HGNC:23448	yes	268	preserve_existing_decision	original497	用户主表保留
+NUTM2G	HGNC:23449	yes	270	preserve_existing_decision	original497	用户主表保留
+PGBD4	HGNC:19401	yes	281	preserve_existing_decision	original497	用户主表保留
+PRR23A	HGNC:37172	yes	299	preserve_existing_decision	original497	用户主表保留
+PRR23C	HGNC:37173	yes	301	preserve_existing_decision	original497	用户主表保留
+RTL5	HGNC:29430	yes	320	preserve_existing_decision	original497	用户主表保留
+SATL1	HGNC:27992	yes	325	preserve_existing_decision	original497	用户主表保留
+SH2D7	HGNC:34549	yes	330	preserve_existing_decision	original497	用户主表保留
+SIRPB2	HGNC:16247	yes	335	preserve_existing_decision	original497	用户主表保留
+XAGE5	HGNC:30930	yes	277	preserve_existing_decision	original497	用户主表保留
+ZFR2	HGNC:29189	yes	406	preserve_existing_decision	original497	用户主表保留
+ANKRD62	HGNC:35241	no		reject	original219	用户主表名单外排除
+DRC11L	HGNC:22831	yes	111	preserve_existing_decision	original497	用户主表保留
+FAM227A	HGNC:44197	no		reject	original219	用户主表名单外排除
+GOLGA6D	HGNC:32204	no		reject	original497	用户主表名单外排除
+ZCCHC18	HGNC:32459	yes	404	preserve_existing_decision	original497	用户主表保留
+ZNF385D	HGNC:26191	no		reject	original219	用户主表名单外排除
+STAG3L1	HGNC:33852	yes	346	preserve_existing_decision	original497	用户主表保留
+TLE7	HGNC:53648	yes	361	preserve_existing_decision	original497	用户主表保留
+ANHX	HGNC:40024	yes	10	preserve_existing_decision	original497	用户主表保留
+ANKRD61	HGNC:22467	no		reject	original219	用户主表名单外排除
+CENPBD1P	HGNC:28272	yes	62	preserve_existing_decision	original497	用户主表保留
+CPHXL2	HGNC:55919	yes	80	preserve_existing_decision	original497	用户主表保留
+CT47B1	HGNC:33293	yes	103	preserve_existing_decision	original497	用户主表保留
+DUX5	HGNC:3083	yes	115	preserve_existing_decision	original497	用户主表保留
+DUXB	HGNC:33345	yes	116	preserve_existing_decision	original497	用户主表保留
+ENTREP2	HGNC:29075	yes	123	preserve_existing_decision	original497	用户主表保留
+FAM90A10	HGNC:32258	no		reject	original219	用户主表名单外排除
+FAM90A11	HGNC:32259	no		reject	original219	用户主表名单外排除
+FAM90A12	HGNC:32260	no		reject	original219	用户主表名单外排除
+FAM90A13	HGNC:32261	no		reject	original219	用户主表名单外排除
+FAM90A14	HGNC:32262	no		reject	original219	用户主表名单外排除
+FAM90A15	HGNC:32263	no		reject	original219	用户主表名单外排除
+FAM90A20	HGNC:32268	no		reject	original219	用户主表名单外排除
+FAM90A22	HGNC:32270	no		reject	original219	用户主表名单外排除
+FAM90A23	HGNC:32271	no		reject	original219	用户主表名单外排除
+FAM90A24	HGNC:32272	no		reject	original219	用户主表名单外排除
+FAM90A3	HGNC:32251	no		reject	original219	用户主表名单外排除
+FAM90A7	HGNC:32255	no		reject	original219	用户主表名单外排除
+FAM90A8	HGNC:32256	no		reject	original219	用户主表名单外排除
+FAM90A9	HGNC:32257	no		reject	original219	用户主表名单外排除
+FBXW10B	HGNC:14379	yes	171	preserve_existing_decision	original497	用户主表保留
+FOXD4L4	HGNC:23762	no		reject	original219	用户主表名单外排除
+FRG2B	HGNC:33518	yes	175	preserve_existing_decision	original497	用户主表保留
+FRG2C	HGNC:33626	yes	176	preserve_existing_decision	original497	用户主表保留
+KIAA1755	HGNC:29372	yes	208	preserve_existing_decision	original497	用户主表保留
+KLF18	HGNC:51793	yes	209	preserve_existing_decision	original497	用户主表保留
+KRABD1	HGNC:38708	no		reject	original497	用户主表名单外排除
+LINC02218	HGNC:53085	no		reject	original497	用户主表名单外排除
+LITAFD	HGNC:53927	yes	217	preserve_existing_decision	original497	用户主表保留
+LRRC75A	HGNC:32403	yes	231	preserve_existing_decision	original497	用户主表保留
+MAGEB17	HGNC:17418	no		reject	original497	用户主表名单外排除
+MAGEB5	HGNC:23795	no		reject	original497	用户主表名单外排除
+MAGEB6B	HGNC:28824	no		reject	original497	用户主表名单外排除
+MBD3L2B	HGNC:53435	yes	239	preserve_existing_decision	original497	用户主表保留
+MBD3L3	HGNC:37205	yes	240	preserve_existing_decision	original497	用户主表保留
+MBD3L4	HGNC:37206	yes	241	preserve_existing_decision	original497	用户主表保留
+MBD3L5	HGNC:37204	yes	242	preserve_existing_decision	original497	用户主表保留
+MRO	HGNC:24121	yes	247	preserve_existing_decision	original497	用户主表保留
+MYRFL	HGNC:26316	yes	255	preserve_existing_decision	original497	用户主表保留
+NPIPB2	HGNC:37451	no		reject	original219	用户主表名单外排除
+POM121L2	HGNC:13973	no		reject	original219	用户主表名单外排除
+PPP4R3C	HGNC:33146	yes	291	preserve_existing_decision	original497	用户主表保留
+PRR29	HGNC:25673	yes	303	preserve_existing_decision	original497	用户主表保留
+PRRT4	HGNC:37280	yes	309	preserve_existing_decision	original497	用户主表保留
+SCAND2P	HGNC:10567	yes	326	preserve_existing_decision	original497	用户主表保留
+STAG3L2	HGNC:33886	no		reject	original497	用户主表名单外排除
+STAG3L3	HGNC:33845	no		reject	original497	用户主表名单外排除
+TAF11L11	HGNC:53854	no		reject	original219	用户主表名单外排除
+TAF11L12	HGNC:53855	no		reject	original219	用户主表名单外排除
+TAF11L13	HGNC:53856	no		reject	original219	用户主表名单外排除
+TAF11L14	HGNC:53857	no		reject	original219	用户主表名单外排除
+TAF11L2	HGNC:53845	no		reject	original219	用户主表名单外排除
+TAF11L3	HGNC:53846	no		reject	original219	用户主表名单外排除
+TAF11L4	HGNC:53847	no		reject	original219	用户主表名单外排除
+TAF11L9	HGNC:53852	no		reject	original219	用户主表名单外排除
+TRIM51G	HGNC:43972	yes	377	preserve_existing_decision	original497	用户主表保留
+UBTFL6	HGNC:35406	yes	385	preserve_existing_decision	original497	用户主表保留
+USP17L23	HGNC:44451	no		reject	original497	用户主表名单外排除
+USP17L4	HGNC:37176	no		reject	original497	用户主表名单外排除
+USP17L8	HGNC:37181	no		reject	original497	用户主表名单外排除
+VSIG10L	HGNC:27111	yes	390	preserve_existing_decision	original497	用户主表保留
+ZNF814	HGNC:33258	yes	413	preserve_existing_decision	original497	用户主表保留
+CARMIL3	HGNC:20272	yes	57	preserve_existing_decision	original497	用户主表保留
+FAM149A	HGNC:24527	yes	137	preserve_existing_decision	original497	用户主表保留
+FAM157B	HGNC:34080	yes	145	preserve_existing_decision	original497	用户主表保留
+GOLGA8H	HGNC:37443	no		reject	original497	用户主表名单外排除
+GOLGA8M	HGNC:44404	no		reject	original497	用户主表名单外排除
+GOLGA8Q	HGNC:44408	no		reject	original497	用户主表名单外排除
+FAM169BP	HGNC:26835	yes	148	preserve_existing_decision	original497	用户主表保留
+GOLGA8J	HGNC:38650	no		reject	original497	用户主表名单外排除
+AADACL2	HGNC:24427	yes	6	preserve_existing_decision	original497	用户主表保留
+ANKDD1B	HGNC:32525	no		reject	original497	用户主表名单外排除
+C2CD4D	HGNC:37210	yes	20	preserve_existing_decision	original497	用户主表保留
+CLEC19A	HGNC:34522	yes	76	preserve_existing_decision	original497	用户主表保留
+CNPY1	HGNC:27786	yes	79	preserve_existing_decision	original497	用户主表保留
+CT47C1	HGNC:53820	yes	104	preserve_existing_decision	original497	用户主表保留
+FAM157A	HGNC:34079	yes	144	preserve_existing_decision	original497	用户主表保留
+FAM157C	HGNC:34081	yes	146	preserve_existing_decision	original497	用户主表保留
+GASK1A	HGNC:24485	yes	178	preserve_existing_decision	original497	用户主表保留
+GIMD1	HGNC:44141	yes	179	preserve_existing_decision	original497	用户主表保留
+GOLGA8K	HGNC:38652	no		reject	original497	用户主表名单外排除
+GOLGA8N	HGNC:44405	no		reject	original497	用户主表名单外排除
+GOLGA8S	HGNC:44409	no		reject	original497	用户主表名单外排除
+TMA7B	HGNC:53893	yes	363	preserve_existing_decision	original497	用户主表保留
+VCF2	HGNC:25085	yes	388	preserve_existing_decision	original497	用户主表保留
+PROB1	HGNC:41906	yes	295	preserve_existing_decision	original497	用户主表保留
+FOXL2NB	HGNC:34428	no		reject	original219	用户主表名单外排除
+KLKP1	HGNC:21260	no		reject	original219	用户主表名单外排除
+PRAC2	HGNC:30143	no		reject	original219	用户主表名单外排除
+TUG1	HGNC:26066	no		reject	original219	用户主表名单外排除
+C9orf153	HGNC:31456	yes	39	preserve_existing_decision	original497	用户主表保留
+LACTBL1	HGNC:35445	yes	212	preserve_existing_decision	original497	用户主表保留
+SPATA31F1	HGNC:41911	yes	338	preserve_existing_decision	original497	用户主表保留
+IER5L	HGNC:23679	yes	194	preserve_existing_decision	original497	用户主表保留
+TMEM116	HGNC:25084	no		reject	original219	用户主表名单外排除
+BRD3OS	HGNC:24742	no		reject	original219	用户主表名单外排除
+C11orf21	HGNC:13231	no		reject	original219	用户主表名单外排除
+C11orf42	HGNC:28541	yes	42	preserve_existing_decision	original497	用户主表保留
+C11orf96	HGNC:38675	no		reject	original219	用户主表名单外排除
+C12orf60	HGNC:28726	yes	45	preserve_existing_decision	original497	用户主表保留
+C16orf46	HGNC:26525	yes	48	preserve_existing_decision	original497	用户主表保留
+C17orf107	HGNC:37238	no		reject	original219	用户主表名单外排除
+C19orf67	HGNC:34354	no		reject	original219	用户主表名单外排除
+C2orf72	HGNC:27418	no		reject	original219	用户主表名单外排除
+C2orf81	HGNC:34350	yes	22	preserve_existing_decision	original497	用户主表保留
+C8orf58	HGNC:32233	no		reject	original219	用户主表名单外排除
+CCDC188	HGNC:51899	no		reject	original219	用户主表名单外排除
+CLBA1	HGNC:20126	yes	74	preserve_existing_decision	original497	用户主表保留
+ERICH4	HGNC:34497	no		reject	original219	用户主表名单外排除
+HRCT1	HGNC:33872	yes	191	preserve_existing_decision	original497	用户主表保留
+IQCF3	HGNC:31816	yes	198	preserve_existing_decision	original497	用户主表保留
+KIAA0040	HGNC:28950	yes	205	preserve_existing_decision	original497	用户主表保留
+KIAA1614	HGNC:29327	no		reject	original219	用户主表名单外排除
+LKAAEAR1	HGNC:33718	yes	218	preserve_existing_decision	original497	用户主表保留
+MSANTD1	HGNC:33741	yes	250	preserve_existing_decision	original497	用户主表保留
+PRR23E	HGNC:32481	yes	302	preserve_existing_decision	original497	用户主表保留
+PRR9	HGNC:32057	yes	297	preserve_existing_decision	original497	用户主表保留
+RNF224	HGNC:41912	no		reject	original219	用户主表名单外排除
+SAMD15	HGNC:18631	yes	324	preserve_existing_decision	original497	用户主表保留
+SMIM24	HGNC:37244	no		reject	original497	用户主表名单外排除
+SMKR1	HGNC:43561	yes	336	preserve_existing_decision	original497	用户主表保留
+SPMIP3	HGNC:30435	yes	343	preserve_existing_decision	original497	用户主表保留
+TEX52	HGNC:53643	yes	353	preserve_existing_decision	original497	用户主表保留
+TMEM121B	HGNC:1844	yes	369	preserve_existing_decision	original497	用户主表保留
+TMEM212	HGNC:34295	no		reject	original219	用户主表名单外排除
+TMEM221	HGNC:21943	no		reject	original219	用户主表名单外排除
+TMEM52	HGNC:27916	no		reject	original219	用户主表名单外排除
+TMEM74B	HGNC:15893	no		reject	original219	用户主表名单外排除
+UBALD1	HGNC:29576	yes	383	preserve_existing_decision	original497	用户主表保留
+FAM89A	HGNC:25057	yes	131	preserve_existing_decision	original497	用户主表保留
+TEX261	HGNC:30712	yes	355	preserve_existing_decision	original497	用户主表保留
+ATXN8	HGNC:32925	yes	15	preserve_existing_decision	original497	用户主表保留
+C17orf100	HGNC:34494	yes	49	preserve_existing_decision	original497	用户主表保留
+C20orf173	HGNC:16166	yes	52	preserve_existing_decision	original497	用户主表保留
+C2orf66	HGNC:33809	yes	21	preserve_existing_decision	original497	用户主表保留
+C6orf163	HGNC:21403	no		reject	original219	用户主表名单外排除
+DSEL	HGNC:18144	yes	113	preserve_existing_decision	original497	用户主表保留
+FAM181B	HGNC:28512	yes	153	preserve_existing_decision	original497	用户主表保留
+FAM240C	HGNC:54200	yes	169	preserve_existing_decision	original497	用户主表保留
+HSFX4	HGNC:52398	yes	193	preserve_existing_decision	original497	用户主表保留
+ITPRID1	HGNC:27363	yes	200	preserve_existing_decision	original497	用户主表保留
+IZUMO4	HGNC:26950	yes	201	preserve_existing_decision	original497	用户主表保留
+NFILZ	HGNC:52681	yes	261	preserve_existing_decision	original497	用户主表保留
+SMIM18	HGNC:42973	no		reject	original497	用户主表名单外排除
+SPATA45	HGNC:33709	yes	341	preserve_existing_decision	original497	用户主表保留
+TEX13C	HGNC:52277	yes	351	preserve_existing_decision	original497	用户主表保留
+TMEM82	HGNC:32350	yes	368	preserve_existing_decision	original497	用户主表保留
+TMEM89	HGNC:32372	no		reject	original219	用户主表名单外排除
+UBAP1L	HGNC:40028	yes	384	preserve_existing_decision	original497	用户主表保留
+C5orf63	HGNC:40051	yes	29	preserve_existing_decision	original497	用户主表保留
+C3orf80	HGNC:40048	yes	23	preserve_existing_decision	original497	用户主表保留
+C4orf51	HGNC:37264	yes	25	preserve_existing_decision	original497	用户主表保留
+CDRT15L2	HGNC:34075	yes	60	preserve_existing_decision	original497	用户主表保留
+CFAP97D2	HGNC:53789	yes	71	preserve_existing_decision	original497	用户主表保留
+CIMIP3	HGNC:55126	no		reject	original497	用户主表名单外排除
+FAM180A	HGNC:33773	yes	152	preserve_existing_decision	original497	用户主表保留
+INSYN2B	HGNC:37271	yes	197	preserve_existing_decision	original497	用户主表保留
+LINC03040	HGNC:28692	no		reject	original497	用户主表名单外排除
+CT45A5	HGNC:33270	yes	85	preserve_existing_decision	original497	用户主表保留
+CT45A6	HGNC:33271	yes	86	preserve_existing_decision	original497	用户主表保留
+CT45A2	HGNC:28400	yes	83	preserve_existing_decision	original497	用户主表保留
+HNRNPCL3	HGNC:51235	no		reject	original219	用户主表名单外排除
+HNRNPCL4	HGNC:51333	no		reject	original219	用户主表名单外排除
+CT45A8	HGNC:51261	yes	88	preserve_existing_decision	original497	用户主表保留
+CT45A9	HGNC:51262	yes	89	preserve_existing_decision	original497	用户主表保留
+CT45A7	HGNC:51260	yes	87	preserve_existing_decision	original497	用户主表保留
+TRIM49D1	HGNC:43973	yes	374	preserve_existing_decision	original497	用户主表保留
+TRIM49D2	HGNC:37217	yes	375	preserve_existing_decision	original497	用户主表保留
+PABPC1L2A	HGNC:27989	no		reject	original497	用户主表名单外排除
+CT47A1	HGNC:33282	yes	91	preserve_existing_decision	original497	用户主表保留
+CT47A10	HGNC:33291	yes	100	preserve_existing_decision	original497	用户主表保留
+CT47A11	HGNC:27397	yes	101	preserve_existing_decision	original497	用户主表保留
+CT47A12	HGNC:33292	yes	102	preserve_existing_decision	original497	用户主表保留
+CT47A2	HGNC:33283	yes	92	preserve_existing_decision	original497	用户主表保留
+CT47A3	HGNC:33284	yes	93	preserve_existing_decision	original497	用户主表保留
+CT47A4	HGNC:33285	yes	94	preserve_existing_decision	original497	用户主表保留
+CT47A5	HGNC:33286	yes	95	preserve_existing_decision	original497	用户主表保留
+CT47A6	HGNC:33287	yes	96	preserve_existing_decision	original497	用户主表保留
+CT47A7	HGNC:33288	yes	97	preserve_existing_decision	original497	用户主表保留
+CT47A8	HGNC:33289	yes	98	preserve_existing_decision	original497	用户主表保留
+CT47A9	HGNC:33290	yes	99	preserve_existing_decision	original497	用户主表保留
+DMRTC1	HGNC:13910	yes	109	preserve_existing_decision	original497	用户主表保留
+DMRTC1B	HGNC:31686	yes	110	preserve_existing_decision	original497	用户主表保留
+FAM156A	HGNC:30114	no		reject	original219	用户主表名单外排除
+FAM156B	HGNC:31962	yes	143	preserve_existing_decision	original497	用户主表保留
+FAM90A16	HGNC:32264	no		reject	original219	用户主表名单外排除
+FAM90A17	HGNC:32265	no		reject	original219	用户主表名单外排除
+FAM90A18	HGNC:32266	no		reject	original219	用户主表名单外排除
+FAM90A19	HGNC:32267	no		reject	original219	用户主表名单外排除
+PABPC1L2B	HGNC:31852	no		reject	original497	用户主表名单外排除
+TAF11L10	HGNC:53853	no		reject	original219	用户主表名单外排除
+TAF11L5	HGNC:53848	no		reject	original219	用户主表名单外排除
+TAF11L6	HGNC:53849	no		reject	original219	用户主表名单外排除
+TAF11L7	HGNC:53850	no		reject	original219	用户主表名单外排除
+TAF11L8	HGNC:53851	no		reject	original219	用户主表名单外排除

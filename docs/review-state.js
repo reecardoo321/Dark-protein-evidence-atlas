@@ -6,6 +6,11 @@
  const OLD_KEY='protein-atlas-review-20261020-v1';
  const SCHEMA='protein-atlas-manual-review-1';
  const SNAPSHOT='2026-10-21';
+ const POLICY=root.ATLAS_REVIEW_LIST_POLICY||null;
+ const EXCLUDED=new Set(POLICY?.excluded||[]);
+ const isExcluded=s=>EXCLUDED.has(typeof s==='string'?s:s.symbol);
+ const isBatchReject=d=>!!(d&&d.status==='reject'&&d.decisionOrigin==='user_list_exclusion'&&d.listPolicyVersion===POLICY?.version);
+ const needsReview=d=>!d.reviewed&&!isBatchReject(d);
  const STATUS={accept:'已接受',reject:'已拒绝',pending:'待审',not_in_subset:'未纳入497'};
  const SHORT={accept:'接受',reject:'拒绝',pending:'待审',not_in_subset:'未纳入'};
  let genes=[],map=new Map(),state=null,subs=[];
@@ -15,16 +20,33 @@
  const label=s=>STATUS[s]||s;
  const short=s=>SHORT[s]||s;
  const clone=d=>({...d});
- const defaults=g=>isSubset(g)
+ const defaults=g=>isExcluded(g)?{status:'reject',reviewed:false,note:'',updatedAt:null,decisionOrigin:'user_list_exclusion',listPolicyVersion:POLICY.version,listExclusionReason:POLICY.reason}:isSubset(g)
    ? {status:'accept',reviewed:false,note:'',updatedAt:null}
    : {status:'not_in_subset',reviewed:false,note:'',updatedAt:null};
  function read(key){try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}}
  function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));return true}catch{return false}}
  function notify(){for(const f of subs){try{f(state)}catch{}}}
+ function applyListPolicy(stored){
+  if(!POLICY||state.appliedListPolicies?.[POLICY.version])return;
+  const backupKey=KEY+'-before-'+POLICY.version;
+  // Preserve the exact pre-migration browser record. Never overwrite a previous backup.
+  if(stored&&localStorage.getItem(backupKey)===null)localStorage.setItem(backupKey,JSON.stringify(stored));
+  const appliedAt=now();let changed=0;
+  for(const g of genes){
+   if(!isExcluded(g))continue;
+   const d=state.decisions[g.symbol];
+   if(d.status!=='reject'){d.status='reject';d.reviewed=false;d.decisionOrigin='user_list_exclusion';d.updatedAt=appliedAt;changed++;}
+   else if(!d.reviewed){d.decisionOrigin='user_list_exclusion';}
+   d.listPolicyVersion=POLICY.version;d.listExclusionReason=POLICY.reason;
+  }
+  state.appliedListPolicies={...state.appliedListPolicies,[POLICY.version]:{source_sha256:POLICY.source_sha256,appliedAt,changed,excluded:POLICY.excluded_count,backupKey:stored?backupKey:null}};
+  state.updatedAt=appliedAt;
+ }
  function init(list){
   genes=list||[];map=new Map(genes.map(g=>[g.symbol,g]));
   const stored=read(KEY);
   state=stored&&stored.schema===SCHEMA&&stored.decisions?stored:{schema:SCHEMA,snapshot:SNAPSHOT,updatedAt:now(),decisions:{}};
+  const preMigration=stored?JSON.parse(JSON.stringify(stored)):null;
   const old=read(OLD_KEY);const oldNotes=old&&old.notes?old.notes:{};
   for(const g of genes){
    const d=state.decisions[g.symbol];
@@ -40,6 +62,7 @@
     if(!d.updatedAt)d.updatedAt=null;
    }
   }
+  applyListPolicy(preMigration);
   persist();return api;
  }
  function get(symbol){const d=state&&state.decisions?state.decisions[symbol]:null;return d?clone(d):null}
@@ -48,7 +71,7 @@
   if(!STATUS[status])throw new Error('未知审查状态：'+status);
   const g=map.get(symbol);if(!g)throw new Error('未知基因：'+symbol);
   const d=state.decisions[symbol]||defaults(g);
-  d.status=status;
+  d.status=status;d.decisionOrigin='manual';
   if(status==='pending'||status==='not_in_subset')d.reviewed=false;
   else d.reviewed=opts.reviewed!==undefined?!!opts.reviewed:true;
   if(opts.note!==undefined)d.note=String(opts.note);
@@ -88,12 +111,12 @@
  function counts(scope){
   scope=scope||'subset';
   const list=scopeGenes(scope);
-  const c={scope,total:list.length,reviewed:0,unreviewed:0,accept:0,reject:0,pending:0,not_in_subset:0,acceptReviewed:0};
+  const c={scope,total:list.length,reviewed:0,unreviewed:0,accept:0,reject:0,pending:0,not_in_subset:0,acceptReviewed:0,batchRejected:0};
   for(const g of list){
    const d=state.decisions[g.symbol];
    if(!d)continue;
    c[d.status]=(c[d.status]||0)+1;
-   if(d.reviewed)c.reviewed++;else c.unreviewed++;
+   if(d.reviewed)c.reviewed++;else if(isBatchReject(d))c.batchRejected++;else c.unreviewed++;
    if(d.status==='accept'&&d.reviewed)c.acceptReviewed++;
   }
   return c;
@@ -104,7 +127,7 @@
    const d=state.decisions[g.symbol];if(!d)return filter==='all';
    switch(filter){
     case 'all':return true;
-    case 'unreviewed':return !d.reviewed;
+    case 'unreviewed':return needsReview(d);
     case 'reviewed':return d.reviewed;
     case 'accept':return d.status==='accept';
     case 'acceptReviewed':return d.status==='accept'&&d.reviewed;
@@ -117,7 +140,7 @@
  }
  function exportJSON(){
   return {
-   schema:SCHEMA,snapshot:SNAPSHOT,exportedAt:now(),
+   schema:SCHEMA,snapshot:SNAPSHOT,exportedAt:now(),appliedListPolicies:state.appliedListPolicies||{},listPolicy:POLICY?{version:POLICY.version,source_sha256:POLICY.source_sha256,retained:POLICY.retained_count,excluded:POLICY.excluded_count}:null,
    counts:{subset:counts('subset'),all:counts('all'),outside:counts('outside')},
    decisions:Object.fromEntries(genes.map(g=>[g.symbol,state.decisions[g.symbol]]))
   };
@@ -130,7 +153,7 @@
   for(const g of genes){
    const src=data.decisions[g.symbol];
    if(src&&STATUS[src.status]){
-    next[g.symbol]={status:src.status,reviewed:!!src.reviewed,note:String(src.note||''),updatedAt:src.updatedAt||null};
+    next[g.symbol]={status:src.status,reviewed:!!src.reviewed,note:String(src.note||''),updatedAt:src.updatedAt||null,decisionOrigin:String(src.decisionOrigin||'import'),listPolicyVersion:src.listPolicyVersion?String(src.listPolicyVersion):undefined,listExclusionReason:src.listExclusionReason?String(src.listExclusionReason):undefined};
    }else if(mode==='merge'&&state.decisions[g.symbol]){
     next[g.symbol]=state.decisions[g.symbol];
    }else{
@@ -140,10 +163,10 @@
   state.decisions=next;state.updatedAt=now();persist();notify();return counts('subset');
  }
  function exportCSV(){
-  const head=['symbol','hgnc','membership','decision','decision_label','reviewed','note','updatedAt'];
+  const head=['symbol','hgnc','membership','decision','decision_label','reviewed','note','updatedAt','decisionOrigin','listPolicyVersion','listExclusionReason'];
   const rows=genes.map(g=>{
    const d=state.decisions[g.symbol];
-   return [g.symbol,g.hgnc,isSubset(g)?'497子集':'219未纳入',d.status,label(d.status),d.reviewed?'是':'否',d.note,d.updatedAt||''];
+   return [g.symbol,g.hgnc,isSubset(g)?'497子集':'219未纳入',d.status,label(d.status),d.reviewed?'是':'否',d.note,d.updatedAt||'',d.decisionOrigin||'',d.listPolicyVersion||'',d.listExclusionReason||''];
   });
   const esc=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
   return '\uFEFF'+[head,...rows].map(r=>r.map(esc).join(',')).join('\r\n');
@@ -156,6 +179,6 @@
    if(stored&&stored.decisions){state=stored;notify();}
   });
  }
- const api={init,get,set,setNote,reset,resetAll,counts,list,exportJSON,importJSON,exportCSV,subscribe,label,short,membership,isSubset,STATUS,SHORT,KEY,snapshot:SNAPSHOT,get genes(){return genes}};
+ const api={isExcluded,isBatchReject,needsReview,listPolicy:POLICY,init,get,set,setNote,reset,resetAll,counts,list,exportJSON,importJSON,exportCSV,subscribe,label,short,membership,isSubset,STATUS,SHORT,KEY,snapshot:SNAPSHOT,get genes(){return genes}};
  root.AtlasReviewState=api;
 })(typeof window!=='undefined'?window:globalThis);
